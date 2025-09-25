@@ -326,6 +326,8 @@ function App() {
               ? '98px'
               : screenWidth >= 1525
               ? '95px'
+              : screenWidth === 1024
+              ? '68px'
               : '87px',
           paddingBottom: '10px',
         }}
