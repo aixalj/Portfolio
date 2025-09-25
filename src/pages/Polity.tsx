@@ -4,7 +4,7 @@ interface PolityProps {
 
 const Polity = ({ onBack }: PolityProps) => {
   return (
-    <div className='w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
+    <div className='w-full h-screen overflow-y-auto bg-white px-3 py-2 pb-20'>
       <div className='mb-6'>
         <button
           onClick={() => {
@@ -90,8 +90,8 @@ const Polity = ({ onBack }: PolityProps) => {
         </div>
 
         {/* Desktop Bottom Navigation */}
-        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4'>
-          <div className='flex justify-between items-center max-w-7xl mx-auto'>
+        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t px-3 border-gray-200  py-4'>
+          <div className='flex justify-between items-center  mx-auto'>
             <button
               onClick={() => (window.location.href = '/gumroad')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
