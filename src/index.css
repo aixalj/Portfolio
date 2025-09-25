@@ -1,9 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Import Hanken Grotesk font */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
 
 /* Remove default browser scroll */
 html,
@@ -19,4 +17,34 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Custom utility classes */
+.mt-0-custom {
+  margin-top: 0 !important;
+}
+
+.mb-5-custom {
+  margin-bottom: 1.25rem !important;
+}
+
+/* Remove all link styling except when underline class is present */
+a:not(.underline) {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:not(.underline):hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:not(.underline):visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:not(.underline):active {
+  color: inherit !important;
+  text-decoration: none !important;
 }
