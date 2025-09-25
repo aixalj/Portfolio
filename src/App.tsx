@@ -1,4 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
+import Polity from './pages/Polity';
+import WellEasy from './pages/WellEasy';
+import SI from './pages/SI';
+import TBD from './pages/TBD/Block';
+import Gumroad from './pages/Gumroad';
 
 function App() {
   const rightPaneRef = useRef<HTMLDivElement>(null);
@@ -7,6 +12,8 @@ function App() {
   const [activePage, setActivePage] = useState('home');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [currentCaseStudy, setCurrentCaseStudy] = useState<string | null>(null);
+  const [caseStudiesScrollPosition, setCaseStudiesScrollPosition] = useState(0);
 
   const handleLeftWheel = (event: React.WheelEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -358,9 +365,12 @@ function App() {
                 />
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <h3 className='text-sm font-hanken text-gray-900 mb-2'>
+                <a
+                  href='/polity'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   1. Polity
-                </h3>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     Nemo Ipsum Dolorem, quae Amet Id Magna
@@ -384,9 +394,12 @@ function App() {
                 />
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <h3 className='text-sm font-hanken text-gray-900 mb-2'>
+                <a
+                  href='/welleasy'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   2. WellEasy
-                </h3>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     Nemo Ipsum Dolorem, quae Amet Id Magna
@@ -410,9 +423,12 @@ function App() {
                 />
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <h3 className='text-sm font-hanken text-gray-900 mb-2'>
+                <a
+                  href='/tbd'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   3. TBD/Block
-                </h3>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     Nemo Ipsum Dolorem, quae Amet Id Magna
@@ -436,9 +452,12 @@ function App() {
                 />
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <h3 className='text-sm font-hanken text-gray-900 mb-2'>
+                <a
+                  href='/si'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   4. SI for Apple News
-                </h3>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     Nemo Ipsum Dolorem, quae Amet Id Magna
@@ -462,9 +481,12 @@ function App() {
                 />
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <h3 className='text-sm font-hanken text-gray-900 mb-2'>
+                <a
+                  href='/gumroad'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   5. Gumroad
-                </h3>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     Nemo Ipsum Dolorem, quae Amet Id Magna
@@ -488,7 +510,7 @@ function App() {
       </div>
 
       {/* Mobile Case Studies Page */}
-      {activePage === 'case-studies' && (
+      {activePage === 'case-studies' && !currentCaseStudy && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
           <div className='mb-6'>
             <p className='text-sm font-hanken text-gray-900'>Case Studies</p>
@@ -513,9 +535,15 @@ function App() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-                1. Project One
-              </h3>
+              <button
+                onClick={() => {
+                  setCaseStudiesScrollPosition(0);
+                  setCurrentCaseStudy('polity');
+                }}
+                className='text-sm font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'
+              >
+                1. Polity
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 Nemo Ipsum Dolorem, quae Amet Id Magna
               </h4>
@@ -535,9 +563,12 @@ function App() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-                2. Project Two
-              </h3>
+              <button
+                onClick={() => setCurrentCaseStudy('welleasy')}
+                className='text-sm font-hanken text-gray-600 mb-2'
+              >
+                2. WellEasy
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 Duis Voluptas Officia Est Commodo
               </h4>
@@ -557,9 +588,12 @@ function App() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-                3. Project Three
-              </h3>
+              <button
+                onClick={() => setCurrentCaseStudy('SI')}
+                className='text-sm font-hanken text-gray-600 mb-2'
+              >
+                3. SI for Apple News
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 Inventore Veritatis Et Quasi Architecto
               </h4>
@@ -579,9 +613,12 @@ function App() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-                4. Project Four
-              </h3>
+              <button
+                onClick={() => setCurrentCaseStudy('TBD')}
+                className='text-sm font-hanken text-gray-600 mb-2'
+              >
+                4. TBD/Block
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 Beatae Vitae Dicta Sunt Explicabo
               </h4>
@@ -600,9 +637,12 @@ function App() {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-                5. Project Five
-              </h3>
+              <button
+                onClick={() => setCurrentCaseStudy('Gumroad')}
+                className='text-sm font-hanken text-gray-600 mb-2'
+              >
+                5. Gumroad
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 Voluptatem Sequi Nesciunt Neque
               </h4>
@@ -928,6 +968,82 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Individual Case Study Pages - Mobile/Tablet Only */}
+      {currentCaseStudy === 'polity' && (
+        <div className='lg:hidden'>
+          <Polity
+            onBack={() => {
+              setCurrentCaseStudy(null);
+              setTimeout(() => {
+                if (rightPaneRef.current) {
+                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
+                }
+              }, 100);
+            }}
+          />
+        </div>
+      )}
+
+      {currentCaseStudy === 'welleasy' && (
+        <div className='lg:hidden'>
+          <WellEasy
+            onBack={() => {
+              setCurrentCaseStudy(null);
+              setTimeout(() => {
+                if (rightPaneRef.current) {
+                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
+                }
+              }, 100);
+            }}
+          />
+        </div>
+      )}
+
+      {currentCaseStudy === 'SI' && (
+        <div className='lg:hidden'>
+          <SI
+            onBack={() => {
+              setCurrentCaseStudy(null);
+              setTimeout(() => {
+                if (rightPaneRef.current) {
+                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
+                }
+              }, 100);
+            }}
+          />
+        </div>
+      )}
+
+      {currentCaseStudy === 'TBD' && (
+        <div className='lg:hidden'>
+          <TBD
+            onBack={() => {
+              setCurrentCaseStudy(null);
+              setTimeout(() => {
+                if (rightPaneRef.current) {
+                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
+                }
+              }, 100);
+            }}
+          />
+        </div>
+      )}
+
+      {currentCaseStudy === 'Gumroad' && (
+        <div className='lg:hidden'>
+          <Gumroad
+            onBack={() => {
+              setCurrentCaseStudy(null);
+              setTimeout(() => {
+                if (rightPaneRef.current) {
+                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
+                }
+              }, 100);
+            }}
+          />
         </div>
       )}
 

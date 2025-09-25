@@ -1,0 +1,92 @@
+interface PolityProps {
+  onBack: () => void;
+}
+
+const Polity = ({ onBack }: PolityProps) => {
+  return (
+    <div className='w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
+      <div className='mb-6'>
+        <button
+          onClick={onBack}
+          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
+        >
+          ← Back to Case Studies
+        </button>
+        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <div
+          style={{
+            borderTop: '1px solid #d9d9d9',
+            marginTop: '25px',
+            width: '100%',
+            marginBottom: '15px',
+          }}
+        />
+      </div>
+
+      {/* Case Study Content */}
+      <div>
+        <div className='w-full h-96 mb-6 overflow-hidden'>
+          <img
+            src='/diagonal-placeholder.svg'
+            alt='Polity project'
+            className='w-full h-full object-cover'
+          />
+        </div>
+
+        <h3 className='text-sm font-hanken text-gray-600 mb-2'>Polity</h3>
+        <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+          Nemo Ipsum Dolorem, quae Amet Id Magna
+        </h4>
+
+        <div className='space-y-4'>
+          <div>
+            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+              Overview
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed'>
+              A comprehensive political platform designed to connect citizens
+              with their representatives through an intuitive, accessible
+              interface that promotes civic engagement and transparency in
+              government.
+            </p>
+          </div>
+
+          <div>
+            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+              Challenge
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed'>
+              Creating a user-friendly platform that could handle complex
+              political data while remaining accessible to users of all
+              technical backgrounds and ages.
+            </p>
+          </div>
+
+          <div>
+            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+              Solution
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed'>
+              Developed a clean, minimalist design with progressive disclosure,
+              ensuring information is digestible while maintaining the depth
+              required for political engagement.
+            </p>
+          </div>
+
+          <div>
+            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+              Results
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed'>
+              Increased user engagement by 40% and improved accessibility scores
+              by 85%, making political participation more inclusive across all
+              demographics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Polity;
