@@ -7,10 +7,16 @@ const SI = ({ onBack }: SIProps) => {
     <div className='w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
       <div className='mb-6'>
         <button
-          onClick={onBack}
+          onClick={() => {
+            if (window.innerWidth >= 1024) {
+              window.location.href = '/';
+            } else {
+              onBack();
+            }
+          }}
           className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
-          ← Back to Case Studies
+          ← Back
         </button>
         <p className='text-sm font-hanken text-gray-900'>Case Study</p>
         <div
@@ -80,6 +86,72 @@ const SI = ({ onBack }: SIProps) => {
               Improved user confidence in financial decisions by 70% and
               increased platform adoption by 50%.
             </p>
+          </div>
+        </div>
+
+        {/* Desktop Bottom Navigation */}
+        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4'>
+          <div className='flex justify-between items-center max-w-7xl mx-auto'>
+            <button
+              onClick={() => (window.location.href = '/tbd')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              ← PREVIOUS
+            </button>
+            <button
+              onClick={() => (window.location.href = '/gumroad')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              NEXT →
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile/Tablet Bottom Navigation */}
+        <div className='lg:hidden fixed bottom-16 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
+          <div className='flex justify-between items-center'>
+            <button
+              onClick={() => (window.location.href = '/tbd')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              ← PREVIOUS
+            </button>
+            <button
+              onClick={() => (window.location.href = '/gumroad')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              NEXT →
+            </button>
+          </div>
+        </div>
+
+        {/* Main Mobile Navigation */}
+        <div className='lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50'>
+          <div className='flex justify-around py-3'>
+            <button
+              onClick={() => (window.location.href = '/')}
+              className='text-xs font-hanken px-3 py-2 text-gray-800'
+            >
+              INFO
+            </button>
+            <button
+              onClick={() => (window.location.href = '/')}
+              className='text-xs font-hanken px-3 py-2 text-gray-800 underline'
+            >
+              CASE STUDIES
+            </button>
+            <button
+              onClick={() => (window.location.href = '/')}
+              className='text-xs font-hanken px-3 py-2 text-gray-800'
+            >
+              CV
+            </button>
+            <a
+              href='mailto:aixa.jemmottmusin@gmail.com'
+              className='text-xs font-hanken px-3 py-2 text-gray-800'
+            >
+              CONTACT
+            </a>
           </div>
         </div>
       </div>
