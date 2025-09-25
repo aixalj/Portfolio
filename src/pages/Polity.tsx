@@ -8,11 +8,9 @@ const Polity = ({ onBack }: PolityProps) => {
       <div className='mb-6'>
         <button
           onClick={() => {
-            if (window.innerWidth >= 1024) {
-              window.location.href = '/';
-            } else {
-              onBack();
-            }
+            window.location.href = '/';
+            // Set a flag to indicate we should show case studies section
+            localStorage.setItem('showCaseStudies', 'true');
           }}
           className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >

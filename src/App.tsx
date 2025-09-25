@@ -10,6 +10,15 @@ function App() {
   const cvPaneRef = useRef<HTMLDivElement>(null);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [activePage, setActivePage] = useState('home');
+
+  // Check if we should show case studies on load
+  useEffect(() => {
+    const shouldShowCaseStudies = localStorage.getItem('showCaseStudies');
+    if (shouldShowCaseStudies === 'true') {
+      setActivePage('case-studies');
+      localStorage.removeItem('showCaseStudies');
+    }
+  }, []);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [currentCaseStudy, setCurrentCaseStudy] = useState<string | null>(null);

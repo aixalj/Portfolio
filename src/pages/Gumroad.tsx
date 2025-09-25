@@ -8,11 +8,8 @@ const Gumroad = ({ onBack }: GumroadProps) => {
       <div className='mb-6'>
         <button
           onClick={() => {
-            if (window.innerWidth >= 1024) {
-              window.location.href = '/';
-            } else {
-              onBack();
-            }
+            window.location.href = '/';
+            localStorage.setItem('showCaseStudies', 'true');
           }}
           className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
