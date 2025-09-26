@@ -423,12 +423,19 @@ function App() {
 
             {/* Project 3 */}
             <div className='py-6'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-96 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4'>
+                  <img
+                    src='/tbd-desktop.png'
+                    alt='TBD/Block'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/tbd-mobile.png'
+                    alt='TBD/Block'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -439,12 +446,15 @@ function App() {
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Nemo Ipsum Dolorem, quae Amet Id Magna
+                    C=equals
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    I partnered with TBD/Block (a division of Block, formerly
+                    Square) to design and engineer the launch platform for The
+                    Lightning Network. My role focused on translating complex
+                    financial technology into an intuitive, responsive web
+                    experience - balancing design clarity, technical precision,
+                    and scalability.
                   </p>
                 </div>
               </div>
@@ -464,7 +474,7 @@ function App() {
                   href='/si'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  4. SI for Apple News
+                  4. Sports Illustrated for Apple News
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -596,18 +606,21 @@ function App() {
                 />
               </div>
               <button
-                onClick={() => setCurrentCaseStudy('SI')}
+                onClick={() => setCurrentCaseStudy('TBD')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                3. SI for Apple News
+                3. TBD/Block
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Inventore Veritatis Et Quasi Architecto
+                C=equals
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores.
+                I partnered with TBD/Block (a division of Block, formerly
+                Square) to design and engineer the launch platform for The
+                Lightning Network. My role focused on translating complex
+                financial technology into an intuitive, responsive web
+                experience - balancing design clarity, technical precision, and
+                scalability.
               </p>
             </div>
 
@@ -621,17 +634,18 @@ function App() {
                 />
               </div>
               <button
-                onClick={() => setCurrentCaseStudy('TBD')}
+                onClick={() => setCurrentCaseStudy('SI')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                4. TBD/Block
+                4. Sports Illustrated for Apple News
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Beatae Vitae Dicta Sunt Explicabo
+                Inventore Veritatis Et Quasi Architecto
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
               </p>
             </div>
 
@@ -924,7 +938,7 @@ function App() {
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       Figma
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'> 
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       Responsive design
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
