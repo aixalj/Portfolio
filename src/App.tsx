@@ -924,7 +924,7 @@ function App() {
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       Figma
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'> 
                       Responsive design
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
