@@ -983,76 +983,31 @@ function App() {
       {/* Individual Case Study Pages - Mobile/Tablet Only */}
       {currentCaseStudy === 'polity' && (
         <div className='lg:hidden'>
-          <Polity
-            onBack={() => {
-              setCurrentCaseStudy(null);
-              setTimeout(() => {
-                if (rightPaneRef.current) {
-                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
-                }
-              }, 100);
-            }}
-          />
+          <Polity />
         </div>
       )}
 
       {currentCaseStudy === 'welleasy' && (
         <div className='lg:hidden'>
-          <WellEasy
-            onBack={() => {
-              setCurrentCaseStudy(null);
-              setTimeout(() => {
-                if (rightPaneRef.current) {
-                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
-                }
-              }, 100);
-            }}
-          />
+          <WellEasy />
         </div>
       )}
 
       {currentCaseStudy === 'SI' && (
         <div className='lg:hidden'>
-          <SI
-            onBack={() => {
-              setCurrentCaseStudy(null);
-              setTimeout(() => {
-                if (rightPaneRef.current) {
-                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
-                }
-              }, 100);
-            }}
-          />
+          <SI />
         </div>
       )}
 
       {currentCaseStudy === 'TBD' && (
         <div className='lg:hidden'>
-          <TBD
-            onBack={() => {
-              setCurrentCaseStudy(null);
-              setTimeout(() => {
-                if (rightPaneRef.current) {
-                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
-                }
-              }, 100);
-            }}
-          />
+          <TBD />
         </div>
       )}
 
       {currentCaseStudy === 'Gumroad' && (
         <div className='lg:hidden'>
-          <Gumroad
-            onBack={() => {
-              setCurrentCaseStudy(null);
-              setTimeout(() => {
-                if (rightPaneRef.current) {
-                  rightPaneRef.current.scrollTop = caseStudiesScrollPosition;
-                }
-              }, 100);
-            }}
-          />
+          <Gumroad />
         </div>
       )}
 

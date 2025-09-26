@@ -1,8 +1,4 @@
-interface SIProps {
-  onBack: () => void;
-}
-
-const SI = ({ onBack }: SIProps) => {
+const SI = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-1 pb-20'>
       <div className='mb-6'>

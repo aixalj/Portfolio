@@ -1,8 +1,4 @@
-interface PolityProps {
-  onBack: () => void;
-}
-
-const Polity = ({ onBack }: PolityProps) => {
+const Polity = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-2 pb-20'>
       <div className='mb-6'>

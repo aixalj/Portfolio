@@ -1,8 +1,4 @@
-interface GumroadProps {
-  onBack: () => void;
-}
-
-const Gumroad = ({ onBack }: GumroadProps) => {
+const Gumroad = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-1 pb-20'>
       <div className='mb-6'>

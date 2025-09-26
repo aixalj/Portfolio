@@ -1,8 +1,4 @@
-interface WellEasyProps {
-  onBack: () => void;
-}
-
-const WellEasy = ({ onBack }: WellEasyProps) => {
+const WellEasy = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-1 pb-20'>
       <div className='mb-6'>

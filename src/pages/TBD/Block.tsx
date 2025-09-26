@@ -1,8 +1,4 @@
-interface TBDProps {
-  onBack: () => void;
-}
-
-const TBD = ({ onBack }: TBDProps) => {
+const TBD = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-1 pb-20'>
       <div className='mb-6'>
