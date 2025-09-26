@@ -39,10 +39,12 @@ const TBD = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-          <h3 className='text-sm font-hanken text-gray-600 mb-2'>TBD/Block</h3>
-          <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-            C=equals
-          </h4>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+              TBD/Block
+            </h3>
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+              C=equals
+            </h4>
           </div>
           <div className='flex justify-center mb-4'>
             <img
@@ -81,6 +83,40 @@ const TBD = () => {
               The goal was to simplify complex financial concepts into a clear,
               scalable, and responsive digital experience.
             </p>
+          </div>
+
+          {/* Additional Images Section */}
+          <div className='w-full mb-6 flex flex-row gap-4'>
+            <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+              <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
+                Scroll
+              </div>
+              <img
+                src='/Home-TBD.png'
+                alt='TBD/Block Desktop'
+                className='w-full object-contain'
+              />
+            </div>
+            <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+              <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
+                Scroll
+              </div>
+              <img
+                src='/Home-Tablet-TBD.png'
+                alt='TBD/Block Tablet'
+                className='w-full object-contain'
+              />
+            </div>
+            <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+              <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
+                Scroll
+              </div>
+              <img
+                src='/Home-Mobile-TBD.png'
+                alt='TBD/Block Mobile'
+                className='w-full object-contain'
+              />
+            </div>
           </div>
 
           <div>
