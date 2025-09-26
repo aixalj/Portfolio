@@ -22,7 +22,6 @@ function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [currentCaseStudy, setCurrentCaseStudy] = useState<string | null>(null);
-  const [caseStudiesScrollPosition, setCaseStudiesScrollPosition] = useState(0);
 
   const handleLeftWheel = (event: React.WheelEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -546,7 +545,6 @@ function App() {
               </div>
               <button
                 onClick={() => {
-                  setCaseStudiesScrollPosition(0);
                   setCurrentCaseStudy('polity');
                 }}
                 className='text-sm font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'

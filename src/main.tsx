@@ -14,26 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route
-          path='/polity'
-          element={<Polity onBack={() => window.history.back()} />}
-        />
-        <Route
-          path='/welleasy'
-          element={<WellEasy onBack={() => window.history.back()} />}
-        />
-        <Route
-          path='/si'
-          element={<SI onBack={() => window.history.back()} />}
-        />
-        <Route
-          path='/tbd'
-          element={<TBD onBack={() => window.history.back()} />}
-        />
-        <Route
-          path='/gumroad'
-          element={<Gumroad onBack={() => window.history.back()} />}
-        />
+        <Route path='/polity' element={<Polity />} />
+        <Route path='/welleasy' element={<WellEasy />} />
+        <Route path='/si' element={<SI />} />
+        <Route path='/tbd' element={<TBD />} />
+        <Route path='/gumroad' element={<Gumroad />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
