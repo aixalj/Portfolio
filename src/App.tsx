@@ -139,9 +139,9 @@ function App() {
           <p className='text-sm font-hanken text-gray-900 mb-2'>Portfolio</p>
           <a
             href='https://www.aixajemmottmusin.com/'
-            className='text-sm font-hanken text-gray-900 mb-4 underline'
+            className='text-sm font-hanken text-gray-900 mb-4'
           >
-            aixajemmottmusin.com
+            Aixa Jemmott-Musin
           </a>
           <div className='space-y-2 mb-4'>
             <a
@@ -212,63 +212,119 @@ function App() {
           </div>
 
           {/* Fading Image Carousel */}
-          <div className='mb-8'>
-            <div className='relative w-full h-80 overflow-hidden rounded'>
-              <img
-                src='/diagonal-placeholder.svg'
-                alt={`Portfolio image ${currentImageIndex + 1}`}
-                className='w-full h-full object-cover transition-opacity duration-1000'
+          <div className='h-[350px] min-[641px]:h-[450px] min-[768px]:h-[550px] min-[930px]:h-[650px] mb-4'>
+            <div className='relative w-full h-full overflow-hidden rounded'>
+              <div
+                className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
                   opacity: currentImageIndex === 0 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
                 }}
-              />
-              <img
-                src='/diagonal-placeholder.svg'
-                alt={`Portfolio image ${currentImageIndex + 1}`}
-                className='w-full h-full object-cover transition-opacity duration-1000'
+              >
+                <div className='flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/Polity-Desktop.png'
+                    alt='Polity'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/Polity-Mobile.png'
+                    alt='Polity'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
                   opacity: currentImageIndex === 1 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
                 }}
-              />
-              <img
-                src='/diagonal-placeholder.svg'
-                alt={`Portfolio image ${currentImageIndex + 1}`}
-                className='w-full h-full object-cover transition-opacity duration-1000'
+              >
+                <div className='flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/WellEasy-Tablet.png'
+                    alt='WellEasy'
+                    className='w-[45%] object-contain'
+                  />
+                  <img
+                    src='/WellEasy-Mobile.png'
+                    alt='WellEasy'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
                   opacity: currentImageIndex === 2 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
                 }}
-              />
-              <img
-                src='/diagonal-placeholder.svg'
-                alt={`Portfolio image ${currentImageIndex + 1}`}
-                className='w-full h-full object-cover transition-opacity duration-1000'
+              >
+                <div className='flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/tbd-desktop.png'
+                    alt='TBD/Block'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/tbd-mobile.png'
+                    alt='TBD/Block'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
                   opacity: currentImageIndex === 3 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
                 }}
-              />
-              <img
-                src='/diagonal-placeholder.svg'
-                alt={`Portfolio image ${currentImageIndex + 1}`}
-                className='w-full h-full object-cover transition-opacity duration-1000'
+              >
+                <div className='flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/SI-Tablet-Final.png'
+                    alt='Sports Illustrated for Apple News'
+                    className='w-[72%] object-contain'
+                  />
+                  <img
+                    src='/SI-Mobile.png'
+                    alt='Sports Illustrated for Apple News'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                className='w-full h-full transition-opacity duration-1000'
                 style={{
                   opacity: currentImageIndex === 4 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
                 }}
-              />
+              >
+                <video
+                  className='w-[100%] h-full object-contain'
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload='metadata'
+                  poster='/Gumroad-Proto-3.jpg'
+                  onError={(e) => console.error('Video failed to load:', e)}
+                >
+                  <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+                  <p>Your browser doesn't support HTML5 video.</p>
+                </video>
+              </div>
             </div>
           </div>
 
@@ -276,9 +332,9 @@ function App() {
             <p className='text-sm font-hanken text-gray-900 mb-2'>Portfolio</p>
             <a
               href='https://www.aixajemmottmusin.com/'
-              className='text-sm font-hanken text-gray-700 mb-4 underline block'
+              className='text-sm font-hanken text-gray-700 mb-4 block'
             >
-              aixajemmottmusin.com
+              Aixa Jemmott-Musin
             </a>
             <div className='space-y-2 mb-4'>
               <a
@@ -365,12 +421,19 @@ function App() {
           <div>
             {/* Project 1 */}
             <div className='py-3'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/Polity-Desktop.png'
+                    alt='Polity'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/Polity-Mobile.png'
+                    alt='Polity'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -394,12 +457,19 @@ function App() {
 
             {/* Project 2 */}
             <div className='py-6'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/WellEasy-Tablet.png'
+                    alt='WellEasy'
+                    className='w-1/2 object-contain'
+                  />
+                  <img
+                    src='/WellEasy-Mobile.png'
+                    alt='WellEasy'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -423,7 +493,7 @@ function App() {
 
             {/* Project 3 */}
             <div className='py-6'>
-              <div className='w-full h-96 overflow-hidden'>
+              <div className='w-full h-full overflow-hidden'>
                 <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
                   <img
                     src='/tbd-desktop.png'
@@ -462,7 +532,7 @@ function App() {
 
             {/* Project 4 */}
             <div className='py-6'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
+              <div className='w-full h-full mb-4 overflow-hidden'>
                 <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
                   <img
                     src='/SI-Tablet-Final.png'
@@ -500,20 +570,20 @@ function App() {
 
             {/* Project 5 */}
             <div className='py-6'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-              <video
-              className='w-full h-full object-contain'
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload='metadata'
-              poster='/Gumroad-Proto-3.jpg'
-              onError={(e) => console.error('Video failed to load:', e)}
-            >
-              <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video.</p>
-            </video>
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <video
+                  className='w-full h-full object-contain'
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload='metadata'
+                  poster='/Gumroad-Proto-3.jpg'
+                  onError={(e) => console.error('Video failed to load:', e)}
+                >
+                  <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+                  <p>Your browser doesn't support HTML5 video.</p>
+                </video>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -564,12 +634,19 @@ function App() {
           <div>
             {/* Project 1 */}
             <div className='py-3'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/Polity-Desktop.png'
+                    alt='Polity'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/Polity-Mobile.png'
+                    alt='Polity'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
               </div>
               <button
                 onClick={() => {
@@ -592,11 +669,18 @@ function App() {
             {/* Project 2 */}
             <div className='py-8'>
               <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/WellEasy-Tablet.png'
+                    alt='WellEasy'
+                    className='flex-1 w-1/2 object-contain'
+                  />
+                  <img
+                    src='/WellEasy-Mobile.png'
+                    alt='WellEasy'
+                    className='w-1/5 object-contain'
+                  />
+                </div>
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('welleasy')}
@@ -616,12 +700,19 @@ function App() {
 
             {/* Project 3 */}
             <div className='py-8'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/tbd-desktop.png'
+                    alt='TBD/Block'
+                    className='flex-1 w-1/2 object-cover'
+                  />
+                  <img
+                    src='/tbd-mobile.png'
+                    alt='TBD/Block'
+                    className='w-1/5 object-cover'
+                  />
+                </div>
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('TBD')}
@@ -644,37 +735,53 @@ function App() {
 
             {/* Project 4 */}
             <div className='py-8'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
+                    src='/SI-Tablet-Final.png'
+                    alt='Sports Illustrated for Apple News'
+                    className='w-[72%] object-cover'
+                  />
+                  <img
+                    src='/SI-Mobile.png'
+                    alt='Sports Illustrated for Apple News'
+                    className='w-1/5 object-cover'
+                  />
+                </div>
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('SI')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                4. Sports Illustrated for Apple News
+                4. Apple News
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Inventore Veritatis Et Quasi Architecto
+                Sports Illustrated
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores.
+                Designed a follow CTA and compact footer to enhance engagement
+                on Apple News. Balanced Sports Illustrated’s bold branding with
+                Apple’s minimal aesthetic, creating responsive UI components
+                that are functional, unobtrusive, and scalable across devices.
               </p>
             </div>
 
             {/* Project 5 */}
             <div className='py-8 mb-0'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <video
                   className='w-full h-full object-cover'
-                />
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload='metadata'
+                  poster='/Gumroad-Proto-3.jpg'
+                  onError={(e) => console.error('Video failed to load:', e)}
+                >
+                  <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+                  <p>Your browser doesn't support HTML5 video.</p>
+                </video>
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('Gumroad')}
@@ -683,12 +790,13 @@ function App() {
                 5. Gumroad
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Voluptatem Sequi Nesciunt Neque
+                Tipping + Upsell Integration
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                consequatur.
+                Redesigned Gumroad’s checkout to unify tipping, upsells, and
+                payments in a single seamless flow. Delivered a fluid, intuitive
+                interface that enhanced user experience while opening new
+                revenue opportunities for creators.
               </p>
             </div>
 
@@ -897,10 +1005,10 @@ function App() {
           <div className='space-y-8'>
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4'>
+              <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
                 Education
               </p>
-              <div className='space-y-4 w-[70%]'>
+              <div className='space-y-4 w-[100%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     SuperHi, Online Courses Design & Coding - 2020
@@ -915,10 +1023,10 @@ function App() {
 
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4'>
+              <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
                 Experience
               </p>
-              <div className='space-y-4 w-[70%]'>
+              <div className='space-y-4 w-[100%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     UX/UI Design Engineer Polity (Contract) 09.2024 - Current
@@ -948,7 +1056,7 @@ function App() {
                 <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
                   Skills
                 </p>
-                <div className='space-y-4 w-[70%]'>
+                <div className='space-y-4 w-[100%]'>
                   <div>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       UX/UI Design
