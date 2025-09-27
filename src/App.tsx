@@ -424,7 +424,7 @@ function App() {
             {/* Project 3 */}
             <div className='py-6'>
               <div className='w-full h-96 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
                   <img
                     src='/tbd-desktop.png'
                     alt='TBD/Block'
@@ -463,27 +463,36 @@ function App() {
             {/* Project 4 */}
             <div className='py-6'>
               <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+              <img
+                    src='/SI-Tablet-Final.png'
+                    alt='Sports Illustrated for Apple News'
+                    className=' w-[72%] object-contain'
+                  />
+                  <img
+                    src='/SI-Mobile.png'
+                    alt='Sports Illustrated for Apple News'
+                    className='w-1/5 object-contain'
+                  />
+              </div>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/si'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  4. Sports Illustrated for Apple News
+                  4. Apple News
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Nemo Ipsum Dolorem, quae Amet Id Magna
+                    Sports Illustrated
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Designed a follow CTA and compact footer to enhance
+                    engagement on Apple News. Balanced Sports Illustrated’s bold
+                    branding with Apple’s minimal aesthetic, creating responsive
+                    UI components that are functional, unobtrusive, and scalable
+                    across devices.
                   </p>
                 </div>
               </div>

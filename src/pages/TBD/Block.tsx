@@ -24,7 +24,7 @@ const TBD = () => {
 
       {/* Case Study Content */}
       <div className='max-w-[1200px] mx-auto'>
-        <div className='w-full mb-6 flex flex-row gap-4'>
+        <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
           <img
             src='/tbd-desktop.png'
             alt='TBD/Block'
