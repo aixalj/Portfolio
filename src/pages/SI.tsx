@@ -186,7 +186,7 @@ const SI = () => {
           </div>
 
           {/* Video Section */}
-          <div className='w-full mb-6'>
+          <div className='w-full mb-6 h-full overflow-hidden flex items-center justify-center'>
             <video
               className='w-full h-full object-cover'
               autoPlay
@@ -194,8 +194,9 @@ const SI = () => {
               muted
               playsInline
               preload='auto'
+              onError={(e) => console.error('Video failed to load:', e)}
             >
-              <source src='/SI-Video-Final.mp4' type='video/mp4' />
+              <source src='/Si-Video-Final.mp4' type='video/mp4' />
               <p>Your browser doesn't support HTML5 video.</p>
             </video>
           </div>
