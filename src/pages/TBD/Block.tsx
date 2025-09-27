@@ -73,11 +73,11 @@ const TBD = () => {
         </div>
 
         <div className='space-y-4'>
-          <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <div className='mb-10'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Overview
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
               Partnered with TBD/Block (a division of Block, formerly Square) to
               design and engineer the launch platform for The Lightning Network.
               The goal was to simplify complex financial concepts into a clear,
@@ -87,19 +87,19 @@ const TBD = () => {
 
           {/* Additional Images Section */}
           <div className='w-full mb-6 flex flex-row gap-4'>
-            <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+            <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Scroll
+                Desktop • Scroll • Hover to zoom
               </div>
               <img
                 src='/Home-TBD.png'
                 alt='TBD/Block Desktop'
-                className='w-full object-contain'
+                className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
             <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Scroll
+                Tablet - Scroll
               </div>
               <img
                 src='/Home-Tablet-TBD.png'
@@ -109,7 +109,7 @@ const TBD = () => {
             </div>
             <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Scroll
+                Mobile - Scroll
               </div>
               <img
                 src='/Home-Mobile-TBD.png'
@@ -119,25 +119,75 @@ const TBD = () => {
             </div>
           </div>
 
-          <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-              Process
-            </h5>
-            <p className='text-sm text-gray-600 leading-relaxed'>
-              Collaborated with TBD stakeholders to define user needs and
-              technical requirements, prioritising clarity, security, and
-              long-term scalability. Translated high-fidelity designs into
-              responsive React/Next.js components, integrated Contentful for
-              modular content management, and aligned workflows with TBD’s
-              engineering standards to ensure seamless design-to-code execution.
-            </p>
+          {/* Workflow Diagram */}
+          <div className='w-full mb-6 flex items-center justify-end'>
+            <div className='flex items-center space-x-4'>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-gray-800'>
+                  Design
+                </span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='text-gray-400'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-grayy-800'>Code</span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='text-gray-400'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-gray-800'>
+                  Contentful
+                </span>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <div className='flex justify-between items-start'>
+            <div className='w-[63%]'>
+              {/* Left side content can go here if needed */}
+            </div>
+            <div className='w-[50%] mb-10'>
+              <h5 className='text-sm font-hanken font-medium text-gray-800'>
+                Process
+              </h5>
+              <p className='text-sm text-gray-600 leading-relaxed'>
+                Collaborated with TBD stakeholders to define user needs and
+                technical requirements, prioritising clarity, security, and
+                long-term scalability. Translated high-fidelity designs into
+                responsive React/Next.js components, integrated Contentful for
+                modular content management, and aligned workflows with TBD's
+                engineering standards to ensure seamless design-to-code
+                execution.
+              </p>
+            </div>
+          </div>
+
+          {/* Additional Images Section */}
+          <div className='w-full mb-6 flex flex-row gap-4 items-center'>
+            <div className='w-1/2'>
+              
+              <img
+                src='/Contact-Mpbile-TBD.png'
+                alt='TBD/Block Contact Mobile'
+                className='w-full object-contain'
+              />
+            </div>
+            <div className='w-1/3'>
+            <img
+                src='/About-Tablet-TBD-2 1.png'
+                alt='TBD/Block About Tablet'
+                className='w-full object-contain'
+              />
+            </div>
+          </div>
+
+          <div className='mb-10'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Testing & Deployment
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[50%]'>
               Validated usability, accessibility, and performance across
               devices, iterating with TBD stakeholders to refine the experience.
               Deployed via Netlify with a “Big Bang” strategy, resolving React
@@ -145,11 +195,44 @@ const TBD = () => {
             </p>
           </div>
 
+          {/* Workflow Diagram */}
+          <div className='w-full mb-6 flex items-center justify-start'>
+            <div className='flex items-center space-x-4'>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-gray-800'>
+                  Figma
+                </span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='text-gray-400'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-grayy-800'>React/Next.js</span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='text-gray-400'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-gray-800'>
+                  Contentful
+                </span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='text-gray-400'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+                <span className='text-sm font-medium text-gray-800'>
+                  Netlify
+                </span>
+              </div>
+            </div>
+          </div>
+
           <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Results
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
               The platform successfully launched in Winter 2023. Recognised for
               its clarity, scalability, and robust GitHub documentation, the
               project empowered TBD’s team to independently manage and evolve
