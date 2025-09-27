@@ -463,8 +463,8 @@ function App() {
             {/* Project 4 */}
             <div className='py-6'>
               <div className='w-full h-96 mb-4 overflow-hidden'>
-              <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
-              <img
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                  <img
                     src='/SI-Tablet-Final.png'
                     alt='Sports Illustrated for Apple News'
                     className=' w-[72%] object-contain'
@@ -474,7 +474,7 @@ function App() {
                     alt='Sports Illustrated for Apple News'
                     className='w-1/5 object-contain'
                   />
-              </div>
+                </div>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -501,11 +501,19 @@ function App() {
             {/* Project 5 */}
             <div className='py-6'>
               <div className='w-full h-96 mb-4 overflow-hidden'>
-                <img
-                  src='/diagonal-placeholder.svg'
-                  alt='Project placeholder'
-                  className='w-full h-full object-cover'
-                />
+              <video
+              className='w-full h-full object-contain'
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload='metadata'
+              poster='/Gumroad-Proto-3.jpg'
+              onError={(e) => console.error('Video failed to load:', e)}
+            >
+              <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+              <p>Your browser doesn't support HTML5 video.</p>
+            </video>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -516,12 +524,13 @@ function App() {
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Nemo Ipsum Dolorem, quae Amet Id Magna
+                    Tipping + Upsell Integration
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Redesigned Gumroad’s checkout to unify tipping, upsells, and
+                    payments in a single seamless flow. Delivered a fluid,
+                    intuitive interface that enhanced user experience while
+                    opening new revenue opportunities for creators.
                   </p>
                 </div>
               </div>

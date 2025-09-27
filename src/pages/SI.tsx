@@ -193,7 +193,8 @@ const SI = () => {
               loop
               muted
               playsInline
-              preload='auto'
+              preload='metadata'
+              poster='/SI-Video-poster.jpg'
               onError={(e) => console.error('Video failed to load:', e)}
             >
               <source src='/Si-Video-Final.mp4' type='video/mp4' />
