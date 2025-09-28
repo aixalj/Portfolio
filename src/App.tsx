@@ -422,10 +422,10 @@ function App() {
             {/* Project 1 */}
             <div className='py-3'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                onClick={() => {
-                  setCurrentCaseStudy('polity');
-                }}>
+                <a
+                  href='/polity'
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                >
                   <img
                     src='/Polity-Desktop.png'
                     alt='Polity'
@@ -436,7 +436,7 @@ function App() {
                     alt='Polity'
                     className='w-1/5 object-contain'
                   />
-                </div>
+                </a>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -461,10 +461,10 @@ function App() {
             {/* Project 2 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                onClick={() => {
-                  setCurrentCaseStudy('welleasy');
-                }}>
+                <a
+                  href='/welleasy'
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                >
                   <img
                     src='/WellEasy-Tablet.png'
                     alt='WellEasy'
@@ -475,7 +475,7 @@ function App() {
                     alt='WellEasy'
                     className='w-1/5 object-contain'
                   />
-                </div>
+                </a>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -500,10 +500,10 @@ function App() {
             {/* Project 3 */}
             <div className='py-6'>
               <div className='w-full h-full overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                onClick={() => {
-                  setCurrentCaseStudy('TBD');
-                }}>
+                <a
+                  href='/tbd'
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                >
                   <img
                     src='/tbd-desktop.png'
                     alt='TBD/Block'
@@ -514,7 +514,7 @@ function App() {
                     alt='TBD/Block'
                     className='w-1/5 object-contain'
                   />
-                </div>
+                </a>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -542,10 +542,10 @@ function App() {
             {/* Project 4 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                onClick={() => {
-                  setCurrentCaseStudy('SI');
-                }}>
+                <a
+                  href='/si'
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                >
                   <img
                     src='/SI-Tablet-Final.png'
                     alt='Sports Illustrated for Apple News'
@@ -556,7 +556,7 @@ function App() {
                     alt='Sports Illustrated for Apple News'
                     className='w-1/5 object-contain'
                   />
-                </div>
+                </a>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
@@ -582,10 +582,10 @@ function App() {
 
             {/* Project 5 */}
             <div className='py-6'>
-              <div className='w-full h-full mb-4 overflow-hidden'
-              onClick={() => {
-                setCurrentCaseStudy('Gumroad');
-              }}>
+              <a
+                className='w-full h-full mb-4 overflow-hidden block'
+                href='/gumroad'
+              >
                 <video
                   className='w-full h-full object-contain'
                   autoPlay
@@ -599,7 +599,7 @@ function App() {
                   <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
                   <p>Your browser doesn't support HTML5 video.</p>
                 </video>
-              </div>
+              </a>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/gumroad'
@@ -650,10 +650,12 @@ function App() {
             {/* Project 1 */}
             <div className='py-3'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                 onClick={() => {
-                  setCurrentCaseStudy('polity');
-                }}>
+                <div
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  onClick={() => {
+                    setCurrentCaseStudy('polity');
+                  }}
+                >
                   <img
                     src='/Polity-Desktop.png'
                     alt='Polity'
@@ -760,8 +762,10 @@ function App() {
             {/* Project 4 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                onClick={() => setCurrentCaseStudy('SI')}>
+                <div
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  onClick={() => setCurrentCaseStudy('SI')}
+                >
                   <img
                     src='/SI-Tablet-Final.png'
                     alt='Sports Illustrated for Apple News'
@@ -793,7 +797,7 @@ function App() {
 
             {/* Project 5 */}
             <div className='py-8 mb-0'>
-              <div className='w-full h-full mb-4 overflow-hidden' >
+              <div className='w-full h-full mb-4 overflow-hidden'>
                 <video
                   onClick={() => setCurrentCaseStudy('Gumroad')}
                   className='w-full h-full object-cover'
