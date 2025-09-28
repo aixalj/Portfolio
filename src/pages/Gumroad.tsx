@@ -169,11 +169,29 @@ const Gumroad = () => {
               Delivered a streamlined tipping and checkout interface that
               reduced friction while creating new revenue opportunities. The
               final design integrated tipping seamlessly, introduced upsells
-              elegantly, and preserved the clarity and simplicity Gumroad’s
+              elegantly, and preserved the clarity and simplicity Gumroad's
               users expect. Supported by thorough research, iterative
               validation, and precise specifications, the solution enhanced both
               user experience and business outcomes.
             </p>
+
+            {/* Mobile/Tablet Bottom Navigation */}
+            <div className='lg:hidden bg-white px-2 py-4 mt-4'>
+              <div className='flex justify-between items-center'>
+                <button
+                  onClick={() => (window.location.href = '/si')}
+                  className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+                >
+                  ← PREVIOUS
+                </button>
+                <button
+                  onClick={() => (window.location.href = '/polity')}
+                  className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+                >
+                  NEXT →
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -194,24 +212,6 @@ const Gumroad = () => {
             </button>
           </div>
         </div>
-
-        {/* Mobile/Tablet Bottom Navigation */}
-        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
-            <div className='flex justify-between items-center'>
-              <button
-                onClick={() => (window.location.href = '/si')}
-                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-              >
-                ← PREVIOUS
-              </button>
-              <button
-                onClick={() => (window.location.href = '/polity')}
-                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-              >
-                NEXT →
-              </button>
-            </div>
-          </div>
 
         {/* Main Mobile Navigation */}
         <div className='lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50'>
