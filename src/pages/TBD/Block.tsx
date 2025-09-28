@@ -50,7 +50,7 @@ const TBD = () => {
             <img
               src='/Block-Logo.png'
               alt='Block Logo'
-              className='h-16 object-contain'
+              className='h-16 object-contain max-sm:h-12'
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const TBD = () => {
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Overview
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               Partnered with TBD/Block (a division of Block, formerly Square) to
               design and engineer the launch platform for The Lightning Network.
               The goal was to simplify complex financial concepts into a clear,
@@ -86,8 +86,8 @@ const TBD = () => {
           </div>
 
           {/* Additional Images Section */}
-          <div className='w-full mb-6 flex flex-row gap-4'>
-            <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
+          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
+            <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 Desktop • Scroll • Hover to zoom
               </div>
@@ -97,7 +97,7 @@ const TBD = () => {
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
-            <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+            <div className='w-1/3 h-96 max-sm:w-full overflow-y-auto border border-gray-200 rounded relative'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 Tablet - Scroll
               </div>
@@ -107,7 +107,7 @@ const TBD = () => {
                 className='w-full object-contain'
               />
             </div>
-            <div className='w-1/3 h-96 overflow-y-auto border border-gray-200 rounded relative'>
+            <div className='w-1/3 h-96 max-sm:w-full overflow-y-auto border border-gray-200 rounded relative'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 Mobile - Scroll
               </div>
@@ -120,23 +120,23 @@ const TBD = () => {
           </div>
 
           {/* Workflow Diagram */}
-          <div className='w-full mb-6 flex items-center justify-end'>
-            <div className='flex items-center space-x-4'>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+          <div className='w-full mb-6 flex items-center justify-end max-lg:justify-start max-sm:justify-center max-sm:w-full'>
+            <div className='flex items-center space-x-4 max-sm:w-full max-sm:justify-center'>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
                 <span className='text-sm font-medium text-gray-800'>
                   Design
                 </span>
               </div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='text-gray-400'>→</div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
-                <span className='text-sm font-medium text-grayy-800'>Code</span>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='text-gray-400 max-lg:hidden'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
+                <span className='text-sm font-medium text-gray-800'>Code</span>
               </div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='text-gray-400'>→</div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='text-gray-400 max-lg:hidden'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
                 <span className='text-sm font-medium text-gray-800'>
                   Contentful
                 </span>
@@ -145,14 +145,14 @@ const TBD = () => {
           </div>
 
           <div className='flex justify-between items-start'>
-            <div className='w-[63%]'>
+            <div className='w-[63%] max-lg:w-[0%]'>
               {/* Left side content can go here if needed */}
             </div>
-            <div className='w-[50%] mb-10'>
+            <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
                 Process
               </h5>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
                 Collaborated with TBD stakeholders to define user needs and
                 technical requirements, prioritising clarity, security, and
                 long-term scalability. Translated high-fidelity designs into
@@ -165,17 +165,16 @@ const TBD = () => {
           </div>
 
           {/* Additional Images Section */}
-          <div className='w-full mb-6 flex flex-row gap-4 items-center'>
-            <div className='w-1/2'>
-              
+          <div className='w-full mb-6 flex flex-row gap-4 items-center max-sm:flex-col'>
+            <div className='w-1/2 max-sm:w-full'>
               <img
                 src='/Contact-Mpbile-TBD.png'
                 alt='TBD/Block Contact Mobile'
                 className='w-full object-contain'
               />
             </div>
-            <div className='w-1/3'>
-            <img
+            <div className='w-1/3 max-sm:w-full'>
+              <img
                 src='/About-Tablet-TBD-2 1.png'
                 alt='TBD/Block About Tablet'
                 className='w-full object-contain'
@@ -187,7 +186,7 @@ const TBD = () => {
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Testing & Deployment
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[50%]'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
               Validated usability, accessibility, and performance across
               devices, iterating with TBD stakeholders to refine the experience.
               Deployed via Netlify with a “Big Bang” strategy, resolving React
@@ -197,30 +196,30 @@ const TBD = () => {
 
           {/* Workflow Diagram */}
           <div className='w-full mb-6 flex items-center justify-start'>
-            <div className='flex items-center space-x-4'>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+            <div className='flex items-center space-x-4 max-lg:flex-row max-lg:w-full max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 max-sm:space-x-0'>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
+                <span className='text-sm font-medium text-gray-800'>Figma</span>
+              </div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='text-gray-400 max-lg:hidden'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
                 <span className='text-sm font-medium text-gray-800'>
-                  Figma
+                  React/Next.js
                 </span>
               </div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='text-gray-400'>→</div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
-                <span className='text-sm font-medium text-grayy-800'>React/Next.js</span>
-              </div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='text-gray-400'>→</div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='text-gray-400 max-lg:hidden'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
                 <span className='text-sm font-medium text-gray-800'>
                   Contentful
                 </span>
               </div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='text-gray-400'>→</div>
-              <div className='w-8 h-[1px] bg-gray-300'></div>
-              <div className='border border-gray-300 px-4 py-2 rounded-lg'>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='text-gray-400 max-lg:hidden'>→</div>
+              <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
+              <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
                 <span className='text-sm font-medium text-gray-800'>
                   Netlify
                 </span>
@@ -232,7 +231,7 @@ const TBD = () => {
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Results
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               The platform successfully launched in Winter 2023. Recognised for
               its clarity, scalability, and robust GitHub documentation, the
               project empowered TBD’s team to independently manage and evolve
@@ -260,7 +259,7 @@ const TBD = () => {
         </div>
 
         {/* Mobile/Tablet Bottom Navigation */}
-        <div className='lg:hidden fixed bottom-16 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
+        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/welleasy')}

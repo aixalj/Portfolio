@@ -197,7 +197,7 @@ function App() {
 
       {/* Mobile Home Page */}
       {activePage === 'home' && (
-        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
+        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-8'>
             <p className='text-sm font-hanken text-gray-900 mb-2'>
               UX/UI Design Engineer
@@ -617,7 +617,7 @@ function App() {
 
       {/* Mobile Case Studies Page */}
       {activePage === 'case-studies' && !currentCaseStudy && (
-        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
+        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-6'>
             <p className='text-sm font-hanken text-gray-900'>Case Studies</p>
             <div
@@ -989,7 +989,7 @@ function App() {
 
       {/* Mobile CV Page */}
       {activePage === 'cv' && (
-        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 py-8 pb-20'>
+        <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 max-sm:px-3 py-8 pb-20'>
           <div className='mb-6'>
             <p className='text-sm font-hanken text-gray-900'>CV</p>
             <div
