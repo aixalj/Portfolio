@@ -1,4 +1,4 @@
-const TBD = () => {
+const Block = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -313,4 +313,4 @@ const TBD = () => {
   );
 };
 
-export default TBD;
+export default Block;

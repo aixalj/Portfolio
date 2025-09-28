@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Polity from './pages/Polity';
 import WellEasy from './pages/WellEasy';
-import SI from './pages/SI';
+import AppleNews from './pages/AppleNews';
 import TBD from './pages/TBD/Block';
 import Gumroad from './pages/Gumroad';
 
@@ -552,7 +552,7 @@ function App() {
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
-                  href='/si'
+                  href='/SI'
                   className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer block'
                 >
                   <img
@@ -569,7 +569,7 @@ function App() {
               </div>
               <div className='flex flex-row gap-2 justify-between'>
                 <a
-                  href='/si'
+                  href='/SI'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   4. Apple News
@@ -773,7 +773,7 @@ function App() {
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
                   className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
-                  onClick={() => setCurrentCaseStudy('SI')}
+                  onClick={() => setCurrentCaseStudy('AppleNews')}
                 >
                   <img
                     src='/SI-Tablet-Final.png'
@@ -788,7 +788,7 @@ function App() {
                 </div>
               </div>
               <button
-                onClick={() => setCurrentCaseStudy('SI')}
+                onClick={() => setCurrentCaseStudy('AppleNews')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
                 4. Apple News
@@ -1170,9 +1170,9 @@ function App() {
         </div>
       )}
 
-      {currentCaseStudy === 'SI' && (
+      {currentCaseStudy === 'AppleNews' && (
         <div className='lg:hidden'>
-          <SI />
+          <AppleNews />
         </div>
       )}
 

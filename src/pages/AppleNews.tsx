@@ -1,4 +1,4 @@
-const SI = () => {
+const AppleNews = () => {
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -307,4 +307,4 @@ const SI = () => {
   );
 };
 
-export default SI;
+export default AppleNews;
