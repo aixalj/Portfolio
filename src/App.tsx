@@ -433,7 +433,7 @@ function App() {
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
                   href='/polity'
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer block'
                 >
                   <img
                     src='/Polity-Desktop.png'
@@ -472,7 +472,7 @@ function App() {
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
                   href='/welleasy'
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer block'
                 >
                   <img
                     src='/WellEasy-Tablet.png'
@@ -511,7 +511,7 @@ function App() {
               <div className='w-full h-full overflow-hidden'>
                 <a
                   href='/tbd'
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                  className='w-full mb-4 flex flex-row gap-4 justify-center items-end cursor-pointer block'
                 >
                   <img
                     src='/tbd-desktop.png'
@@ -553,7 +553,7 @@ function App() {
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
                   href='/si'
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer block'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer block'
                 >
                   <img
                     src='/SI-Tablet-Final.png'
