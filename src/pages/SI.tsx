@@ -163,7 +163,7 @@ const SI = () => {
 
           {/* Additional Images Section */}
           <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
-            <div className='flex-1 h-[21rem] max-lg:h-[15rem] overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
+            <div className='flex-1 h-[21rem] max-lg:h-[15rem] overflow-y-auto max-lg:overflow-x-auto border border-gray-200 rounded relative group cursor-pointer'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
                   Process • Hover to zoom
@@ -173,7 +173,7 @@ const SI = () => {
               <img
                 src='/Research-Cont-1.png'
                 alt='Sports Illustrated Research 1'
-                className='w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
+                className='w-full h-full object-cover max-lg:min-w-full transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
             <div className='flex-1 flex flex-col gap-4'>
@@ -183,7 +183,7 @@ const SI = () => {
                     Process • Hover to zoom
                   </span>
                   <span className='lg:hidden'>Process</span>
-                </div> 
+                </div>
                 <img
                   src='/Research-Cont-2.png'
                   alt='Sports Illustrated Research 2'
