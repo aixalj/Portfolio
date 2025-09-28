@@ -885,7 +885,7 @@ function App() {
           <div className='space-y-8'>
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4'>
+              <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
                 Education
               </p>
               <div className='space-y-4 w-[70%]'>
@@ -911,7 +911,7 @@ function App() {
 
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4'>
+              <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
                 Experience
               </p>
               <div className='space-y-4 w-[70%]'>
@@ -949,7 +949,7 @@ function App() {
             {/* Skills Section */}
             <div>
               <div className='flex flex-row gap-4'>
-                <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
+                <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
                   Skills
                 </p>
                 <div className='space-y-4 w-[70%]'>
