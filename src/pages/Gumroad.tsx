@@ -175,23 +175,6 @@ const Gumroad = () => {
               user experience and business outcomes.
             </p>
           </div>
-          {/* Mobile/Tablet Bottom Navigation */}
-          <div className='lg:hidden bg-white px-2 py-4 mt-4'>
-            <div className='flex justify-between items-center'>
-              <button
-                onClick={() => (window.location.href = '/si')}
-                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-              >
-                ← PREVIOUS
-              </button>
-              <button
-                onClick={() => (window.location.href = '/polity')}
-                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-              >
-                NEXT →
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Desktop Bottom Navigation */}
@@ -211,6 +194,24 @@ const Gumroad = () => {
             </button>
           </div>
         </div>
+
+        {/* Mobile/Tablet Bottom Navigation */}
+        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
+            <div className='flex justify-between items-center'>
+              <button
+                onClick={() => (window.location.href = '/si')}
+                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              >
+                ← PREVIOUS
+              </button>
+              <button
+                onClick={() => (window.location.href = '/polity')}
+                className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              >
+                NEXT →
+              </button>
+            </div>
+          </div>
 
         {/* Main Mobile Navigation */}
         <div className='lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50'>
