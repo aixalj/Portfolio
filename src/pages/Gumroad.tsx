@@ -43,7 +43,7 @@ const Gumroad = () => {
             <img
               src='/Gumroad-logo.png'
               alt='Block Logo'
-              className='h-16 object-contain'
+              className='h-16 max-sm:h-12 object-contain'
             />
           </div>
         </div>
@@ -64,11 +64,11 @@ const Gumroad = () => {
         </div>
 
         <div className='space-y-4'>
-          <div className='mb-10'>
+          <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Overview
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               Gumroad’s checkout flow lacked a cohesive way to integrate tipping
               and upsells, creating friction and missed revenue opportunities at
               the point of purchase. I designed a unified Tipping Screen that
@@ -82,8 +82,12 @@ const Gumroad = () => {
           <div className='w-full mb-6 flex flex-col gap-4'>
             <div className='flex-1 h-20 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Hover to zoom
+                <span className='hidden lg:inline'>
+                  Process • Hover to zoom
+                </span>
+                <span className='lg:hidden'>Process</span>
               </div>
+
               <img
                 src='/Gumroad-2.png'
                 alt='Gumroad'
@@ -92,7 +96,10 @@ const Gumroad = () => {
             </div>
             <div className='flex-1 h-20 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Hover to zoom
+                <span className='hidden lg:inline'>
+                  Process • Hover to zoom
+                </span>
+                <span className='lg:hidden'>Process</span>
               </div>
               <img
                 src='/Gumroad-3.png'
@@ -102,7 +109,10 @@ const Gumroad = () => {
             </div>
             <div className='flex-1 h-20 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Hover to zoom
+                <span className='hidden lg:inline'>
+                  Process • Hover to zoom
+                </span>
+                <span className='lg:hidden'>Process</span>
               </div>
               <img
                 src='/Gumroad-4.png'
@@ -113,14 +123,14 @@ const Gumroad = () => {
           </div>
 
           <div className='flex justify-between items-start'>
-            <div className='w-[63%]'>
+            <div className='w-[63%] max-lg:w-[0%]'>
               {/* Left side content can go here if needed */}
             </div>
-            <div className='w-[50%] mb-10'>
+            <div className='w-[50%] mb-10 max-lg:w-full max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
                 Process
               </h5>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
                 Mapped user journeys and flows to identify where tips and
                 upsells could be introduced without disrupting checkout.
                 Sketched concepts and translated them into iterative Figma
@@ -134,8 +144,8 @@ const Gumroad = () => {
             </div>
           </div>
 
-           {/* Video Section */}
-           <div className='w-full mb-6 h-full overflow-hidden flex items-center justify-center'>
+          {/* Video Section */}
+          <div className='w-full mb-6 h-full overflow-hidden flex items-center justify-center'>
             <video
               className='w-full h-full object-cover'
               autoPlay
@@ -155,7 +165,7 @@ const Gumroad = () => {
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Results
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%]'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               Delivered a streamlined tipping and checkout interface that
               reduced friction while creating new revenue opportunities. The
               final design integrated tipping seamlessly, introduced upsells
@@ -186,7 +196,7 @@ const Gumroad = () => {
         </div>
 
         {/* Mobile/Tablet Bottom Navigation */}
-        <div className='lg:hidden fixed bottom-16 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
+        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/si')}

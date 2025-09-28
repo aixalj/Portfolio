@@ -73,7 +73,7 @@ const TBD = () => {
         </div>
 
         <div className='space-y-4'>
-          <div className='mb-10'>
+          <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Overview
             </h5>
@@ -89,7 +89,10 @@ const TBD = () => {
           <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
             <div className='flex-1 h-96 overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
-                Desktop • Scroll • Hover to zoom
+                <span className='hidden lg:inline'>
+                  Desktop • Scroll • Hover to zoom
+                </span>
+                <span className='lg:hidden'>Desktop</span>
               </div>
               <img
                 src='/Home-TBD.png'
@@ -182,7 +185,7 @@ const TBD = () => {
             </div>
           </div>
 
-          <div className='mb-10'>
+          <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Testing & Deployment
             </h5>
