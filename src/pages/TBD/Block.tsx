@@ -262,7 +262,7 @@ const TBD = () => {
         </div>
 
         {/* Mobile/Tablet Bottom Navigation */}
-        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
+        <div className='lg:hidden bg-white px-2 py-4 mt-4 mb-20'>
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/welleasy')}
