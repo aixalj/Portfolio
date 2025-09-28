@@ -9,7 +9,11 @@ function App() {
   const rightPaneRef = useRef<HTMLDivElement>(null);
   const cvPaneRef = useRef<HTMLDivElement>(null);
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [activePage, setActivePage] = useState('home');
+  const [activePage, setActivePage] = useState(() => {
+    // Check localStorage for saved active page on initial load
+    const savedPage = localStorage.getItem('activePage');
+    return savedPage || 'home';
+  });
 
   // Check if we should show case studies on load
   useEffect(() => {
@@ -19,6 +23,11 @@ function App() {
       localStorage.removeItem('showCaseStudies');
     }
   }, []);
+
+  // Save active page to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('activePage', activePage);
+  }, [activePage]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [currentCaseStudy, setCurrentCaseStudy] = useState<string | null>(null);
