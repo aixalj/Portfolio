@@ -173,7 +173,7 @@ const SI = () => {
               <img
                 src='/Research-Cont-1.png'
                 alt='Sports Illustrated Research 1'
-                className='w-full h-full object-cover max-lg:min-w-full transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
+                className='w-full h-full object-cover max-lg:min-w-full max-lg:overflow-x-auto transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
             <div className='flex-1 flex flex-col gap-4'>

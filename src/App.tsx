@@ -422,7 +422,10 @@ function App() {
             {/* Project 1 */}
             <div className='py-3'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                onClick={() => {
+                  setCurrentCaseStudy('polity');
+                }}>
                   <img
                     src='/Polity-Desktop.png'
                     alt='Polity'
@@ -458,7 +461,10 @@ function App() {
             {/* Project 2 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                onClick={() => {
+                  setCurrentCaseStudy('welleasy');
+                }}>
                   <img
                     src='/WellEasy-Tablet.png'
                     alt='WellEasy'
@@ -494,7 +500,10 @@ function App() {
             {/* Project 3 */}
             <div className='py-6'>
               <div className='w-full h-full overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                onClick={() => {
+                  setCurrentCaseStudy('TBD');
+                }}>
                   <img
                     src='/tbd-desktop.png'
                     alt='TBD/Block'
@@ -533,7 +542,10 @@ function App() {
             {/* Project 4 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                onClick={() => {
+                  setCurrentCaseStudy('SI');
+                }}>
                   <img
                     src='/SI-Tablet-Final.png'
                     alt='Sports Illustrated for Apple News'
@@ -570,7 +582,10 @@ function App() {
 
             {/* Project 5 */}
             <div className='py-6'>
-              <div className='w-full h-full mb-4 overflow-hidden'>
+              <div className='w-full h-full mb-4 overflow-hidden'
+              onClick={() => {
+                setCurrentCaseStudy('Gumroad');
+              }}>
                 <video
                   className='w-full h-full object-contain'
                   autoPlay
@@ -635,7 +650,10 @@ function App() {
             {/* Project 1 */}
             <div className='py-3'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                 onClick={() => {
+                  setCurrentCaseStudy('polity');
+                }}>
                   <img
                     src='/Polity-Desktop.png'
                     alt='Polity'
@@ -668,12 +686,15 @@ function App() {
 
             {/* Project 2 */}
             <div className='py-8'>
-              <div className='w-full h-96 mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+              <div className='w-full h-full mb-4 overflow-hidden'>
+                <div
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  onClick={() => setCurrentCaseStudy('welleasy')}
+                >
                   <img
                     src='/WellEasy-Tablet.png'
                     alt='WellEasy'
-                    className='flex-1 w-1/2 object-contain'
+                    className=' w-1/2 object-contain'
                   />
                   <img
                     src='/WellEasy-Mobile.png'
@@ -701,7 +722,10 @@ function App() {
             {/* Project 3 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div
+                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer'
+                  onClick={() => setCurrentCaseStudy('TBD')}
+                >
                   <img
                     src='/tbd-desktop.png'
                     alt='TBD/Block'
@@ -736,7 +760,8 @@ function App() {
             {/* Project 4 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'>
+                <div className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                onClick={() => setCurrentCaseStudy('SI')}>
                   <img
                     src='/SI-Tablet-Final.png'
                     alt='Sports Illustrated for Apple News'
@@ -768,8 +793,9 @@ function App() {
 
             {/* Project 5 */}
             <div className='py-8 mb-0'>
-              <div className='w-full h-full mb-4 overflow-hidden'>
+              <div className='w-full h-full mb-4 overflow-hidden' >
                 <video
+                  onClick={() => setCurrentCaseStudy('Gumroad')}
                   className='w-full h-full object-cover'
                   autoPlay
                   loop
