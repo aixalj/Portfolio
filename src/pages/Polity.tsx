@@ -307,24 +307,6 @@ const AddressesTable = ({
               and user delight.
             </p>
           </div>
-
-           {/* Mobile/Tablet Bottom Navigation */}
-        <div className='lg:hidden bg-white px-2 py-4 mt-4'>
-          <div className='flex justify-between items-center'>
-            <button
-              onClick={() => (window.location.href = '/gumroad')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-            >
-              ← PREVIOUS
-            </button>
-            <button
-              onClick={() => (window.location.href = '/welleasy')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
-            >
-              NEXT →
-            </button>
-          </div>
-        </div>
         </div>
 
         {/* Desktop Bottom Navigation */}
@@ -345,6 +327,23 @@ const AddressesTable = ({
           </div>
         </div>
 
+        {/* Mobile/Tablet Bottom Navigation */}
+        <div className='lg:hidden bg-white px-2 py-4 mt-4 mb-20'>
+          <div className='flex justify-between items-center'>
+            <button
+              onClick={() => (window.location.href = '/gumroad')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              ← PREVIOUS
+            </button>
+            <button
+              onClick={() => (window.location.href = '/welleasy')}
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+            >
+              NEXT →
+            </button>
+          </div>
+        </div>
 
         {/* Main Mobile Navigation */}
         <div className='lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50'>
