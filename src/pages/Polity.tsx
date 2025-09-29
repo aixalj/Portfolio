@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Polity = () => {
   const [typedCode, setTypedCode] = useState('');
@@ -209,8 +209,8 @@ const AddressesTable = ({
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
                   Address Book • Scroll • Hover to zoom
-                </span>           
-              <span className='lg:hidden'>Address Book</span>
+                </span>
+                <span className='lg:hidden'>Address Book</span>
               </div>
               <img
                 src='/AddressBook-5.png'
