@@ -56,7 +56,7 @@ const Block = () => {
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Design Engineer
+            <span className='font-bold'>Role:</span> UX/UI Designer &Engineer
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>Client:</span> TBD/Block (formerly

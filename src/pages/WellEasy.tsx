@@ -90,7 +90,7 @@ const WellEasy = () => {
             >
               ← PREVIOUS
             </button>
-            <button
+            <button 
               onClick={() => (window.location.href = '/tbd')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >

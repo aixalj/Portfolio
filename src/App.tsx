@@ -456,12 +456,14 @@ function App() {
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Nemo Ipsum Dolorem, quae Amet Id Magna
+                    Web3 Network Platform
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Bridging design and engineering to shape a high-quality Web3
+                    platform. Designed intuitive flows, built scalable
+                    components in React/TypeScript, and delivered
+                    production-ready experiences that balance usability,
+                    consistency, and performance.
                   </p>
                 </div>
               </div>
@@ -686,12 +688,13 @@ function App() {
                 1. Polity
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Nemo Ipsum Dolorem, quae Amet Id Magna
+                Web3 Network Platform
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                Bridging design and engineering to shape a high-quality Web3
+                platform. Designed intuitive flows, built scalable components in
+                React/TypeScript, and delivered production-ready experiences that
+                balance usability, consistency, and performance.
               </p>
             </div>
 
