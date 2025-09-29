@@ -293,6 +293,23 @@ const AddressesTable = ({
             </div>
           </div>
 
+          {/* Video Section */}
+          <div className='w-full mb-6 h-full overflow-hidden flex items-center justify-center'>
+            <video
+              className='w-full h-full object-cover'
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload='metadata'
+              poster='/Gumroad-Proto-3.jpg'
+              onError={(e) => console.error('Video failed to load:', e)}
+            >
+              <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+              <p>Your browser doesn't support HTML5 video.</p>
+            </video>
+          </div>
+
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               Results

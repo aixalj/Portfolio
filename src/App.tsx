@@ -662,7 +662,7 @@ function App() {
             <div className='py-3'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end'
                   onClick={() => {
                     setCurrentCaseStudy('polity');
                   }}
@@ -702,7 +702,7 @@ function App() {
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end'
                   onClick={() => setCurrentCaseStudy('welleasy')}
                 >
                   <img
@@ -737,7 +737,7 @@ function App() {
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end cursor-pointer'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer'
                   onClick={() => setCurrentCaseStudy('TBD')}
                 >
                   <img
@@ -775,7 +775,7 @@ function App() {
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
-                  className='w-full mb-6 flex flex-row gap-4 justify-center items-end'
+                  className='w-full mb-1 flex flex-row gap-4 justify-center items-end'
                   onClick={() => setCurrentCaseStudy('AppleNews')}
                 >
                   <img
