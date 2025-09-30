@@ -302,10 +302,13 @@ const AddressesTable = ({
               muted
               playsInline
               preload='metadata'
-              poster='/Gumroad-Proto-3.jpg'
+              poster='/Demo-Final.jpg'
               onError={(e) => console.error('Video failed to load:', e)}
+              onLoadedData={(e) => {
+                e.currentTarget.playbackRate = 0.25; // Half speed
+              }}
             >
-              <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
+              <source src='/Demo-Final.mp4' type='video/mp4' />
               <p>Your browser doesn't support HTML5 video.</p>
             </video>
           </div>
