@@ -244,7 +244,7 @@ const Block = () => {
         </div>
 
         {/* Desktop Bottom Navigation */}
-        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4'>
+        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/welleasy')}

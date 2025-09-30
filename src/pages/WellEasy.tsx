@@ -164,39 +164,55 @@ const WellEasy = () => {
             <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  High-Fidelity Mockups, UI Components • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>High-Fidelity Mockups</span>
               </div>
               <img
-                src='/AddressBook-4.png'
-                alt='Address Book'
+                src='/WellEasy-1.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
+            <div className='flex-1 h-[315px] overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+              <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
+                <span className='hidden lg:inline'>
+                  High-Fidelity Mockups, UI Components • Scroll • Hover to zoom
+                </span>
+                <span className='lg:hidden'>High-Fidelity Mockups</span>
+              </div>
+              <img
+                src='/WellEasy-3.png'
+                alt='WellEasy'
+                className='w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
+              />
+            </div>
+          </div>
+
+          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
             <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  High-Fidelity Mockups, UI Components • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>High-Fidelity Mockups</span>
               </div>
               <img
-                src='/AddressBook-5.png'
-                alt='Address Book'
+                src='/WellEasy-4.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
-            <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+            <div className='flex-1 h-[280px] overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  High-Fidelity Mockups, UI Components • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>High-Fidelity Mockups</span>
               </div>
               <img
-                src='/AddressBook-6.png'
-                alt='Address Book'
+                src='/WellEasy-5.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
@@ -217,23 +233,21 @@ const WellEasy = () => {
           </div>
 
           {/* Video Section */}
-          <div className='w-full mb-6 h-full overflow-hidden flex items-center justify-center'>
-            <video
-              className='w-full h-full object-cover'
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload='metadata'
-              poster='/Demo-Final.jpg'
-              onError={(e) => console.error('Video failed to load:', e)}
-              onLoadedData={(e) => {
-                e.currentTarget.playbackRate = 0.25; // Half speed
-              }}
-            >
-              <source src='/Demo-Final.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video.</p>
-            </video>
+          <div className='w-full mb-6 flex flex-row gap-4 items-center max-sm:flex-col'>
+            <div className='w-1/5 max-sm:w-1/5'>
+              <img
+                src='/WellEasy-8.png'
+                alt='WellEasy'
+                className='w-full object-contain'
+              />
+            </div>
+            <div className='w-3/4 max-sm:w-3/4'>
+              <img
+                src='/WellEasy-7.png'
+                alt='WellEasy'
+                className='w-full object-contain'
+              />
+            </div>
           </div>
 
           <div>
@@ -252,7 +266,7 @@ const WellEasy = () => {
         </div>
 
         {/* Desktop Bottom Navigation */}
-        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4'>
+        <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/polity')}
