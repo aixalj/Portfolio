@@ -497,12 +497,12 @@ function App() {
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Nemo Ipsum Dolorem, quae Amet Id Magna
+                    Autoship + E-Commerce Experience
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Redesigned core shopping flows and the Autoship subscription
+                    feature, delivering a more intuitive and consistent
+                    e-commerce experience across desktop, tablet and mobile.
                   </p>
                 </div>
               </div>
@@ -693,8 +693,8 @@ function App() {
               <p className='text-sm text-gray-600 leading-relaxed'>
                 Bridging design and engineering to shape a high-quality Web3
                 platform. Designed intuitive flows, built scalable components in
-                React/TypeScript, and delivered production-ready experiences that
-                balance usability, consistency, and performance.
+                React/TypeScript, and delivered production-ready experiences
+                that balance usability, consistency, and performance.
               </p>
             </div>
 
@@ -724,12 +724,12 @@ function App() {
                 2. WellEasy
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Duis Voluptas Officia Est Commodo
+                Autoship + E-Commerce Experience
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo.
+                Redesigned core shopping flows and the Autoship subscription
+                feature, delivering a more intuitive and consistent e-commerce
+                experience across desktop, tablet and mobile.
               </p>
             </div>
 

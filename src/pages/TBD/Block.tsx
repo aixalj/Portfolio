@@ -64,7 +64,7 @@ const Block = () => {
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>Scope:</span> Web Experience Design &
-            Frontend Development
+            Frontend Engineering
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>Stack:</span> React / Next.js,

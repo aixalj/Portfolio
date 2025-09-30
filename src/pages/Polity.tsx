@@ -105,8 +105,7 @@ const AddressesTable = ({
             <span className='font-bold'>Client:</span> Polity
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> UX/UI Design and Frontend
-            Engineering
+            <span className='font-bold'>Scope:</span> Web Application Design & Frontend Engineering
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>Stack:</span> Figma, React/TypeScript
