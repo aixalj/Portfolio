@@ -60,7 +60,8 @@ const WellEasy = () => {
             <span className='font-bold'>Client:</span> WellEasy
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> Autoship feature, Shopping flows, UI components
+            <span className='font-bold'>Scope:</span> Autoship feature, Shopping
+            flows, UI components
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>Stack:</span> Figma
@@ -73,53 +74,66 @@ const WellEasy = () => {
               Overview
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              At Polity, I drive design and engineering efforts across the
-              platform, shaping features that are both intuitive and technically
-              rigorous. From delivering a production-ready Address Book to
-              advancing responsiveness and scalability, my work blends
-              high-fidelity design with system-level engineering to position the
-              product for long-term evolution.
+              At WellEasy, I focused on elevating the digital shopping
+              experience through refined UI and user-centered flows. My
+              contributions spanned designing responsive interfaces for desktop
+              and mobile, introducing scalable UI components, and leading the
+              design of the Autoship feature - a subscription flow that
+              simplified repeat ordering while strengthening customer loyalty.
             </p>
           </div>
 
           {/* Additional Images Section */}
-          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
-            <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+          <div className='w-full mb-6 grid grid-cols-2 gap-4 max-sm:flex max-sm:flex-col'>
+            <div className='h-[120px] overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  User Flows • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>User Flows</span>
               </div>
               <img
-                src='/AddressBook-1.png'
-                alt='Address Book'
+                src='/WellEasy-UX-1.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
-            <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+            <div className='h-[120px] overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  Low-Fidelity Wireframes • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>Low-Fidelity Wireframes</span>
               </div>
               <img
-                src='/AddressBook-2.png'
-                alt='Address Book'
+                src='/WellEasy-UX-2.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
-            <div className='flex-1 h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+            <div className='h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
               <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
                 <span className='hidden lg:inline'>
-                  Address Book • Scroll • Hover to zoom
+                  Low-Fidelity Wireframes • Scroll • Hover to zoom
                 </span>
-                <span className='lg:hidden'>Address Book</span>
+                <span className='lg:hidden'>Low-Fidelity Wireframes</span>
               </div>
               <img
-                src='/AddressBook-3.png'
-                alt='Address Book'
+                src='/WellEasy-UX-3.png'
+                alt='WellEasy'
+                className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
+              />
+            </div>
+            <div className='h-full overflow-y-auto border border-gray-200 rounded relative group cursor-pointer max-lg:group-hover:scale-150 max-lg:transition-transform max-lg:duration-500 max-lg:ease-in-out max-lg:origin-top-left'>
+              <div className='absolute top-2 left-2 bg-gray-100/50 bg-opacity-75 text-black text-xs px-2 py-1 rounded z-10'>
+                <span className='hidden lg:inline'>
+                  Low-Fidelity Wireframes • Scroll • Hover to zoom
+                </span>
+                <span className='lg:hidden'>Low-Fidelity Wireframes</span>
+              </div>
+              <img
+                src='/WellEasy-UX-4.png'
+                alt='WellEasy'
                 className='w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:origin-top-left'
               />
             </div>
@@ -134,12 +148,13 @@ const WellEasy = () => {
                 Process
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Partnering with product and engineering stakeholders, I apply a
-                research-driven, iterative approach - mapping flows, crafting
-                prototypes, and translating them into production-ready code.
-                This end-to-end process ensures that every decision aligns user
-                needs with engineering standards, building a product that feels
-                seamless, inevitable, and resilient.
+                I partnered closely with stakeholders to map customer journeys
+                and uncover friction points across the shopping flow. Using
+                Figma, I created wireframes, prototypes, and iterative design
+                explorations, testing different approaches to ensure clarity,
+                usability, and visual consistency. Each iteration balanced
+                WellEasy’s brand expression with functional efficiency, aligning
+                design decisions directly to user and business needs.
               </p>
             </div>
           </div>
@@ -192,59 +207,13 @@ const WellEasy = () => {
               UX/UI Design
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
-              I design interfaces and flows that anticipate rather than ask,
-              balancing simplicity with depth. Whether refining the Address Book
-              or enhancing core platform interactions, my focus is on crafting
-              experiences that adapt responsively across devices while
-              maintaining brand integrity and user clarity.
+              From modular UI components to end-to-end flows, my work centered
+              on designing a consistent, intuitive system that adapts seamlessly
+              across devices. The Autoship feature became a focal point -
+              crafted to make recurring purchases effortless while maintaining
+              transparency and trust. High-fidelity prototypes guided both
+              internal alignment and user validation.
             </p>
-          </div>
-
-          {/* Mobile Address Book Images */}
-          <div className='w-full mb-6 flex justify-start '>
-            <div className='flex flex-row max-lg:flex-col gap-40 max-lg:gap-6 w-full items-center'>
-              <div className='w-[500px] h-[520px] max-lg:h-[500px] max-lg:w-full bg-gray-700 rounded-lg p-4 overflow-hidden'>
-                <div className='text-xs font-mono leading-relaxed text-white'>
-                  <pre className='whitespace-pre-wrap'>
-   
-                    <span className='animate-pulse'>|</span>
-                  </pre>
-                </div>
-                <div className='mt-3 text-xs text-gray-300 text-center'>
-                  Componentized Address Book in React/TypeScript
-                </div>
-              </div>
-              <div className='flex flex-row gap-4 max-sm:flex-col'>
-                <img
-                  src='/Address-Book-Mobile-2.png'
-                  alt='Address Book Mobile'
-                  className='w-56 object-contain'
-                />
-                <img
-                  src='/AddressBook-Mobile-1.png'
-                  alt='Address Book Mobile'
-                  className='w-56 object-contain'
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className='flex justify-between items-start'>
-            <div className='w-[63%] max-lg:w-[0%]'>
-              {/* Left side content can go here if needed */}
-            </div>
-            <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
-              <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Design Engineering
-              </h5>
-              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Bridging the gap between vision and execution, I implement
-                scalable, reusable components with React and TypeScript,
-                anchored in a shared design system. This integration of design
-                intuition and engineering precision ensures consistency,
-                performance, and accessibility across the product.
-              </p>
-            </div>
           </div>
 
           {/* Video Section */}
@@ -272,13 +241,12 @@ const WellEasy = () => {
               Results
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Shipped the Address Book from concept to production, established
-              scalable design-engineering practices that strengthened
-              platform-wide consistency, expanded usability through responsive
-              design, and refined the UI and codebase foundations to accelerate
-              future releases. My impact extends beyond individual features -
-              advancing the product as a whole toward stability, scalability,
-              and user delight.
+              Delivered a refreshed interface and responsive design system that
+              enhanced usability across the WellEasy site. Designed and refined
+              the Autoship subscription flow, creating a more seamless shopping
+              experience that encouraged repeat orders. My work increased user
+              engagement and strengthened the site's consistency, adaptability,
+              and ability to scale alongside future features.
             </p>
           </div>
         </div>
