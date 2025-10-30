@@ -938,7 +938,7 @@ function App() {
                     UX/UI Design Engineer Polity (Contract) 09.2024 - Current
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UI Designer Simpatica (Freelance) 07.2024 - Current
+                    UI Designer Simpatica (Freelance) 07.2024 - 08.2025
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     Creative Developer FlatPlan (Freelance) - 03.2024 - 05.2024
@@ -1089,7 +1089,7 @@ function App() {
                     UX/UI Design Engineer Polity (Contract) 09.2024 - Current
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UI Designer Simpatica (Freelance) 07.2024 - Current
+                    UI Designer Simpatica (Freelance) 07.2024 - 08.2025
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     Creative Developer FlatPlan (Freelance) - 03.2024 - 05.2024
