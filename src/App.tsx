@@ -152,7 +152,7 @@ function App() {
           >
             Aixa Jemmott-Musin
           </a>
-          <div className='space-y-2 mb-4'>
+          <div className='space-y-2 mb-4 mt-4 flex flex-col'>
             <a
               href='https://www.linkedin.com/in/aixa-jemmott-musin/'
               className='text-sm text-gray-900 underline'
@@ -160,7 +160,15 @@ function App() {
             >
               LinkedIn
             </a>
+            <a
+              href='https://github.com/aixalj'
+              className='text-sm text-gray-900 underline'
+              target='_blank'
+            >
+              Github
+            </a>
           </div>
+          
 
           <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
             I design at the intersection of intuition and engineering - where
@@ -345,13 +353,20 @@ function App() {
             >
               Aixa Jemmott-Musin
             </a>
-            <div className='space-y-2 mb-4'>
+            <div className='space-y-2 mb-4 mt-4 flex flex-col gap-2'>
               <a
                 href='https://www.linkedin.com/in/aixa-jemmott-musin/'
                 className='text-sm text-gray-700 underline block'
                 target='_blank'
               >
                 LinkedIn
+              </a>
+              <a
+                href='https://github.com/aixalj'
+                className='text-sm text-gray-700 underline block'
+                target='_blank'
+              >
+                Github
               </a>
             </div>
             <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
