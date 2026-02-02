@@ -1032,11 +1032,7 @@ function App() {
               </p>
               <div className='w-[60%] font-hanken '>
                 <p className='text-xs font-hanken  text-gray-600 font-medium'>
-                  {new Date().toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
+                  {__BUILD_DATE__}
                 </p>
               </div>
             </div>
@@ -1163,11 +1159,7 @@ function App() {
               </p>
               <div className='w-[60%] font-hanken'>
                 <p className='text-xs font-hanken text-gray-500 font-medium'>
-                  {new Date().toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
+                  {__BUILD_DATE__}
                 </p>
               </div>
             </div>
