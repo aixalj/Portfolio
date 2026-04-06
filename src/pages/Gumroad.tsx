@@ -1,4 +1,12 @@
+import { translations, Language } from '../translations';
+
 const Gumroad = () => {
+  const language: Language =
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es'
+      ? 'es'
+      : 'en';
+  const t = translations[language];
+
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -11,7 +19,7 @@ const Gumroad = () => {
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -34,9 +42,11 @@ const Gumroad = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>Gumroad</h3>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+              {t.gumroadLabel}
+            </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-              Gumroad
+              {t.gumroadLabel}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
@@ -49,32 +59,26 @@ const Gumroad = () => {
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Design Engineer
+            <span className='font-bold'>{t.roleLabel}</span> {t.gumroadRole}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Client:</span> Gumroad
+            <span className='font-bold'>{t.clientLabel}</span> {t.gumroadClient}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> Tipping + Upsell
-            Integration
+            <span className='font-bold'>{t.scopeLabel}</span> {t.gumroadScope}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Stack:</span> Figma
+            <span className='font-bold'>{t.stackLabel}</span> {t.gumroadStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Overview
+              {t.overview}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Gumroad’s checkout flow lacked a cohesive way to integrate tipping
-              and upsells, creating friction and missed revenue opportunities at
-              the point of purchase. I designed a unified Tipping Screen that
-              seamlessly combined tipping, upsell prompts, and checkout into a
-              single intuitive flow - enhancing customer experience while
-              empowering creators to maximise earnings.
+              {t.gumroadOverview}
             </p>
           </div>
 
@@ -128,18 +132,10 @@ const Gumroad = () => {
             </div>
             <div className='w-[50%] mb-10 max-lg:w-full max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Process
+                {t.process}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Mapped user journeys and flows to identify where tips and
-                upsells could be introduced without disrupting checkout.
-                Sketched concepts and translated them into iterative Figma
-                prototypes, progressing from low-fidelity explorations to
-                polished high-fidelity mockups aligned with Gumroad’s brand
-                system. Each iteration balanced hierarchy, usability, and subtle
-                monetisation cues, refined through feedback and testing. Final
-                deliverables included detailed redlines, specifications, and a
-                UI kit to ensure accurate development and scalable consistency.
+                {t.gumroadProcess}
               </p>
             </div>
           </div>
@@ -157,22 +153,16 @@ const Gumroad = () => {
               onError={(e) => console.error('Video failed to load:', e)}
             >
               <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video.</p>
+              <p>{t.videoFallback}</p>
             </video>
           </div>
 
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Results
+              {t.results}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Delivered a streamlined tipping and checkout interface that
-              reduced friction while creating new revenue opportunities. The
-              final design integrated tipping seamlessly, introduced upsells
-              elegantly, and preserved the clarity and simplicity Gumroad's
-              users expect. Supported by thorough research, iterative
-              validation, and precise specifications, the solution enhanced both
-              user experience and business outcomes.
+              {t.gumroadResults}
             </p>
 
             {/* Mobile/Tablet Bottom Navigation */}

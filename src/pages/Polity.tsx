@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
+import { translations, Language } from '../translations';
 
 const Polity = () => {
+  const language: Language =
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es'
+      ? 'es'
+      : 'en';
+  const t = translations[language];
   const [typedCode, setTypedCode] = useState('');
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
 
@@ -56,7 +62,7 @@ const AddressesTable = ({
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -84,9 +90,11 @@ const AddressesTable = ({
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>Polity</h3>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+              {t.polityLabel}
+            </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-              Web3 Network Platform
+              {t.polityTitle}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
@@ -99,31 +107,26 @@ const AddressesTable = ({
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Designer & Engineer
+            <span className='font-bold'>{t.roleLabel}</span> {t.polityRole}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Client:</span> Polity
+            <span className='font-bold'>{t.clientLabel}</span> {t.polityClient}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> Web Application Design & Frontend Engineering
+            <span className='font-bold'>{t.scopeLabel}</span> {t.polityScope}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Stack:</span> Figma, React/TypeScript
+            <span className='font-bold'>{t.stackLabel}</span> {t.polityStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Overview
+              {t.overview}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              At Polity, I drive design and engineering efforts across the
-              platform, shaping features that are both intuitive and technically
-              rigorous. From delivering a production-ready Address Book to
-              advancing responsiveness and scalability, my work blends
-              high-fidelity design with system-level engineering to position the
-              product for long-term evolution.
+              {t.polityOverview}
             </p>
           </div>
 
@@ -176,15 +179,10 @@ const AddressesTable = ({
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Process
+                {t.process}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Partnering with product and engineering stakeholders, I apply a
-                research-driven, iterative approach - mapping flows, crafting
-                prototypes, and translating them into production-ready code.
-                This end-to-end process ensures that every decision aligns user
-                needs with engineering standards, building a product that feels
-                seamless, inevitable, and resilient.
+                {t.polityProcess}
               </p>
             </div>
           </div>
@@ -234,14 +232,10 @@ const AddressesTable = ({
 
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              UX/UI Design
+              {t.polityDesignLabel}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
-              I design interfaces and flows that anticipate rather than ask,
-              balancing simplicity with depth. Whether refining the Address Book
-              or enhancing core platform interactions, my focus is on crafting
-              experiences that adapt responsively across devices while
-              maintaining brand integrity and user clarity.
+              {t.polityDesignDesc}
             </p>
           </div>
 
@@ -280,14 +274,10 @@ const AddressesTable = ({
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Design Engineering
+                {t.polityEngineeringLabel}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Bridging the gap between vision and execution, I implement
-                scalable, reusable components with React and TypeScript,
-                anchored in a shared design system. This integration of design
-                intuition and engineering precision ensures consistency,
-                performance, and accessibility across the product.
+                {t.polityEngineeringDesc}
               </p>
             </div>
           </div>
@@ -308,22 +298,16 @@ const AddressesTable = ({
               }}
             >
               <source src='/Demo-Final.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video.</p>
+              <p>{t.videoFallback}</p>
             </video>
           </div>
 
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Results
+              {t.results}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Shipped the Address Book from concept to production, established
-              scalable design-engineering practices that strengthened
-              platform-wide consistency, expanded usability through responsive
-              design, and refined the UI and codebase foundations to accelerate
-              future releases. My impact extends beyond individual features -
-              advancing the product as a whole toward stability, scalability,
-              and user delight.
+              {t.polityResults}
             </p>
           </div>
         </div>

@@ -1,4 +1,12 @@
+import { translations, Language } from '../translations';
+
 const WellEasy = () => {
+  const language: Language =
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es'
+      ? 'es'
+      : 'en';
+  const t = translations[language];
+
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -11,7 +19,7 @@ const WellEasy = () => {
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -39,9 +47,11 @@ const WellEasy = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>WellEasy</h3>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+              {t.welleasyLabel}
+            </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-              Autoship + E-Commerce Experience
+              {t.welleasyTitle}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
@@ -54,32 +64,26 @@ const WellEasy = () => {
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Designer
+            <span className='font-bold'>{t.roleLabel}</span> {t.welleasyRole}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Client:</span> WellEasy
+            <span className='font-bold'>{t.clientLabel}</span> {t.welleasyClient}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> Autoship feature, Shopping
-            flows, UI components
+            <span className='font-bold'>{t.scopeLabel}</span> {t.welleasyScope}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Stack:</span> Figma
+            <span className='font-bold'>{t.stackLabel}</span> {t.welleasyStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Overview
+              {t.overview}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              At WellEasy, I focused on elevating the digital shopping
-              experience through refined UI and user-centered flows. My
-              contributions spanned designing responsive interfaces for desktop
-              and mobile, introducing scalable UI components, and leading the
-              design of the Autoship feature - a subscription flow that
-              simplified repeat ordering while strengthening customer loyalty.
+              {t.welleasyOverview}
             </p>
           </div>
 
@@ -145,16 +149,10 @@ const WellEasy = () => {
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Process
+                {t.process}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                I partnered closely with stakeholders to map customer journeys
-                and uncover friction points across the shopping flow. Using
-                Figma, I created wireframes, prototypes, and iterative design
-                explorations, testing different approaches to ensure clarity,
-                usability, and visual consistency. Each iteration balanced
-                WellEasy’s brand expression with functional efficiency, aligning
-                design decisions directly to user and business needs.
+                {t.welleasyProcess}
               </p>
             </div>
           </div>
@@ -220,15 +218,10 @@ const WellEasy = () => {
 
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              UX/UI Design
+              {t.welleasyDesignLabel}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
-              From modular UI components to end-to-end flows, my work centered
-              on designing a consistent, intuitive system that adapts seamlessly
-              across devices. The Autoship feature became a focal point -
-              crafted to make recurring purchases effortless while maintaining
-              transparency and trust. High-fidelity prototypes guided both
-              internal alignment and user validation.
+              {t.welleasyDesignDesc}
             </p>
           </div>
 
@@ -252,15 +245,10 @@ const WellEasy = () => {
 
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Results
+              {t.results}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Delivered a refreshed interface and responsive design system that
-              enhanced usability across the WellEasy site. Designed and refined
-              the Autoship subscription flow, creating a more seamless shopping
-              experience that encouraged repeat orders. My work increased user
-              engagement and strengthened the site's consistency, adaptability,
-              and ability to scale alongside future features.
+              {t.welleasyResults}
             </p>
           </div>
         </div>

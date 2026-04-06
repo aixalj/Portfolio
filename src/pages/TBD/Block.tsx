@@ -1,4 +1,12 @@
+import { translations, Language } from '../../translations';
+
 const Block = () => {
+  const language: Language =
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es'
+      ? 'es'
+      : 'en';
+  const t = translations[language];
+
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -11,7 +19,7 @@ const Block = () => {
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -40,10 +48,10 @@ const Block = () => {
         <div className='flex justify-between'>
           <div className='flex flex-col'>
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-              TBD/Block
+              {t.tbdLabel}
             </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-              C=equals
+              {t.tbdTitle}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
@@ -56,32 +64,26 @@ const Block = () => {
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Designer & Engineer
+            <span className='font-bold'>{t.roleLabel}</span> {t.blockRole}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Client:</span> TBD/Block (formerly
-            Square)
+            <span className='font-bold'>{t.clientLabel}</span> {t.blockClient}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> Web Experience Design &
-            Frontend Engineering
+            <span className='font-bold'>{t.scopeLabel}</span> {t.blockScope}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Stack:</span> React / Next.js,
-            Contentful, GitHub
+            <span className='font-bold'>{t.stackLabel}</span> {t.blockStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Overview
+              {t.overview}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Partnered with TBD/Block (a division of Block, formerly Square) to
-              design and engineer the launch platform for The Lightning Network.
-              The goal was to simplify complex financial concepts into a clear,
-              scalable, and responsive digital experience.
+              {t.blockOverview}
             </p>
           </div>
 
@@ -153,16 +155,10 @@ const Block = () => {
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Process
+                {t.process}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Collaborated with TBD stakeholders to define user needs and
-                technical requirements, prioritising clarity, security, and
-                long-term scalability. Translated high-fidelity designs into
-                responsive React/Next.js components, integrated Contentful for
-                modular content management, and aligned workflows with TBD's
-                engineering standards to ensure seamless design-to-code
-                execution.
+                {t.blockProcess}
               </p>
             </div>
           </div>
@@ -187,13 +183,10 @@ const Block = () => {
 
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Testing & Deployment
+              {t.testingDeployment}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
-              Validated usability, accessibility, and performance across
-              devices, iterating with TBD stakeholders to refine the experience.
-              Deployed via Netlify with a “Big Bang” strategy, resolving React
-              SSR issues to ensure a smooth, stable launch.
+              {t.blockTestingDeployment}
             </p>
           </div>
 
@@ -232,13 +225,10 @@ const Block = () => {
 
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Results
+              {t.results}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              The platform successfully launched in Winter 2023. Recognised for
-              its clarity, scalability, and robust GitHub documentation, the
-              project empowered TBD’s team to independently manage and evolve
-              the site post-launch.
+              {t.blockResults}
             </p>
           </div>
         </div>

@@ -1,4 +1,12 @@
+import { translations, Language } from '../translations';
+
 const AppleNews = () => {
+  const language: Language =
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es'
+      ? 'es'
+      : 'en';
+  const t = translations[language];
+
   return (
     <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
       <div className='mb-6 max-w-[1200px] mx-auto'>
@@ -11,7 +19,7 @@ const AppleNews = () => {
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>Case Study</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -40,10 +48,10 @@ const AppleNews = () => {
         <div className='flex justify-between'>
           <div className='flex flex-col'>
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-              Sports Illustrated for Apple News
+              {t.appleNewsPageTitle}
             </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
-              Apple News
+              {t.appleNewsLabel}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
@@ -56,32 +64,26 @@ const AppleNews = () => {
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Role:</span> UX/UI Designer
+            <span className='font-bold'>{t.roleLabel}</span> {t.appleNewsRole}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Client:</span> Sports Illustrated /
-            Apple
+            <span className='font-bold'>{t.clientLabel}</span> {t.appleNewsClient}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Scope:</span> CTA & Footer Component
-            Design
+            <span className='font-bold'>{t.scopeLabel}</span> {t.appleNewsScope}
           </h5>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-            <span className='font-bold'>Tools:</span> Figma, Apple News Design
+            <span className='font-bold'>{t.toolsLabel}</span> {t.appleNewsTools}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Overview
+              {t.overview}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Collaborated with Sports Illustrated and Apple News to design a
-              follow call-to-action (CTA) and a compact footer that enhanced
-              engagement without cluttering the interface. Both components were
-              crafted to align with Sports Illustrated’s brand while maintaining
-              Apple News’ sleek, unobtrusive aesthetic.
+              {t.appleNewsOverview}
             </p>
           </div>
 
@@ -147,16 +149,10 @@ const AppleNews = () => {
             </div>
             <div className='w-[50%] mb-10 max-lg:w-full max-sm:mb-5'>
               <h5 className='text-sm font-hanken font-medium text-gray-800'>
-                Process
+                {t.process}
               </h5>
               <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
-                Researched audience behaviors and engagement patterns to define
-                best practices, then translated insights into wireframes and
-                mood boards that balanced Sports Illustrated’s bold identity
-                with Apple’s refined minimalism. Iterated across multiple design
-                variations, refining hierarchy, responsiveness, and
-                accessibility to deliver UI components that felt both
-                unobtrusive and inevitable across iPhone and iPad.
+                {t.appleNewsProcess}
               </p>
             </div>
           </div>
@@ -220,19 +216,16 @@ const AppleNews = () => {
               onError={(e) => console.error('Video failed to load:', e)}
             >
               <source src='/Si-Video-Final.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video.</p>
+              <p>{t.videoFallback}</p>
             </video>
           </div>
 
           <div>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              Results
+              {t.results}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              Delivered a streamlined follow CTA prominently featuring the SI
-              logo and a compact footer with a “Read More” section. The final
-              solution encouraged user engagement while remaining visually
-              consistent, unobtrusive, and scalable across Apple News.
+              {t.appleNewsResults}
             </p>
           </div>
         </div>

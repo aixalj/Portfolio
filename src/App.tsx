@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { translations, Language } from './translations';
 import Polity from './pages/Polity';
 import WellEasy from './pages/WellEasy';
 import AppleNews from './pages/AppleNews';
@@ -9,6 +10,11 @@ function App() {
   const rightPaneRef = useRef<HTMLDivElement>(null);
   const cvPaneRef = useRef<HTMLDivElement>(null);
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [language, setLanguage] = useState<Language>(() => {
+    const savedLanguage = localStorage.getItem('language');
+    return (savedLanguage as Language) || 'en';
+  });
+
   const [activePage, setActivePage] = useState(() => {
     // Check localStorage for saved active page on initial load
     const savedPage = localStorage.getItem('activePage');
@@ -28,9 +34,17 @@ function App() {
   useEffect(() => {
     localStorage.setItem('activePage', activePage);
   }, [activePage]);
+
+  // Save language to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [currentCaseStudy, setCurrentCaseStudy] = useState<string | null>(null);
+
+  const t = translations[language];
 
   const handleLeftWheel = (event: React.WheelEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -82,7 +96,7 @@ function App() {
             activePage === 'home' ? 'text-gray-800 underline' : 'text-gray-800'
           }`}
         >
-          INFO
+          {t.info}
         </button>
         <button
           onClick={() => setActivePage('case-studies')}
@@ -92,7 +106,7 @@ function App() {
               : 'text-gray-800'
           }`}
         >
-          CASE STUDIES
+          {t.caseStudies}
         </button>
         <button
           onClick={() => setActivePage('cv')}
@@ -100,14 +114,20 @@ function App() {
             activePage === 'cv' ? 'text-gray-800 underline' : 'text-gray-800'
           }`}
         >
-          CV
+          {t.cv}
         </button>
         <a
           href='mailto:aixa.jemmottmusin@gmail.com'
           className='text-xs font-hanken px-3 py-2 text-gray-800'
         >
-          CONTACT
+          {t.contact}
         </a>
+        <button
+          onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
+          className='text-xs font-hanken px-3 py-2 text-gray-800 underline hover:text-gray-600'
+        >
+          {t.language}
+        </button>
       </div>
     </div>
   );
@@ -132,7 +152,7 @@ function App() {
         {/* Header */}
         <div className='mb-6'>
           <p className='text-sm font-hanken text-gray-900 mb-2 whitespace-nowrap'>
-            UX/UI Design Engineer
+            {t.title}
           </p>
           <div
             style={{
@@ -145,12 +165,12 @@ function App() {
 
         {/* Profile Section */}
         <div className=''>
-          <p className='text-sm font-hanken text-gray-900 mb-2'>Portfolio</p>
+          <p className='text-sm font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
           <a
             href='https://www.aixajemmottmusin.com/'
             className='text-sm font-hanken text-gray-900 mb-4'
           >
-            Aixa Jemmott-Musin
+            {t.name}
           </a>
           <div className='space-y-2 mb-4 mt-4 flex flex-col'>
             <a
@@ -171,15 +191,7 @@ function App() {
           
 
           <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
-            I design at the intersection of intuition and engineering - where
-            form whispers to function and technology feels almost invisible. My
-            work extends beyond aesthetics or code; it’s about building
-            experiences that move seamlessly, grounded in research, testing, and
-            technical precision. I thrive on solving complex problems with
-            elegant simplicity, shaping digital products that feel inevitable -
-            interfaces that anticipate, rather than ask. With equal fluency in
-            design and engineering, I bring ideas from concept to reality,
-            always with the user at the center.
+            {t.bio}
           </p>
         </div>
 
@@ -192,8 +204,14 @@ function App() {
               className='block text-sm text-gray-800 underline'
               target='_blank'
             >
-              Contact
+              {t.contact}
             </a>
+            <button
+              onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
+              className='block text-sm text-gray-800 underline cursor-pointer hover:text-gray-600'
+            >
+              {t.language}
+            </button>
           </div>
         </div>
 
@@ -217,7 +235,7 @@ function App() {
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-8'>
             <p className='text-sm font-hanken text-gray-900 mb-2'>
-              UX/UI Design Engineer
+              {t.title}
             </p>
             <div
               style={{
@@ -339,19 +357,19 @@ function App() {
                   onError={(e) => console.error('Video failed to load:', e)}
                 >
                   <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
-                  <p>Your browser doesn't support HTML5 video.</p>
+                  <p>{t.videoFallback}</p>
                 </video>
               </div>
             </div>
           </div>
 
           <div className='mb-8'>
-            <p className='text-sm font-hanken text-gray-900 mb-2'>Portfolio</p>
+            <p className='text-sm font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
             <a
               href='https://www.aixajemmottmusin.com/'
               className='text-sm font-hanken text-gray-700 mb-4 block'
             >
-              Aixa Jemmott-Musin
+              {t.name}
             </a>
             <div className='space-y-2 mb-4 mt-4 flex flex-col gap-2'>
               <a
@@ -430,7 +448,7 @@ function App() {
         <div>
           {/* Header */}
           <div className='mb-4'>
-            <p className='text-sm font-hanken text-gray-900'>Case Studies</p>
+            <p className='text-sm font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -467,18 +485,14 @@ function App() {
                   href='/polity'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  1. Polity
+                  1. {t.polityLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Web3 Network Platform
+                    {t.polityTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Bridging design and engineering to shape a high-quality Web3
-                    platform. Designed intuitive flows, built scalable
-                    components in React/TypeScript, and delivered
-                    production-ready experiences that balance usability,
-                    consistency, and performance.
+                    {t.polityDesc}
                   </p>
                 </div>
               </div>
@@ -508,16 +522,14 @@ function App() {
                   href='/welleasy'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  2. WellEasy
+                  2. {t.welleasyLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Autoship + E-Commerce Experience
+                    {t.welleasyTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Redesigned core shopping flows and the Autoship subscription
-                    feature, delivering a more intuitive and consistent
-                    e-commerce experience across desktop, tablet and mobile.
+                    {t.welleasyDesc}
                   </p>
                 </div>
               </div>
@@ -547,19 +559,14 @@ function App() {
                   href='/tbd'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  3. TBD/Block
+                  3. {t.tbdLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    C=equals
+                    {t.tbdTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    I partnered with TBD/Block (a division of Block, formerly
-                    Square) to design and engineer the launch platform for The
-                    Lightning Network. My role focused on translating complex
-                    financial technology into an intuitive, responsive web
-                    experience - balancing design clarity, technical precision,
-                    and scalability.
+                    {t.tbdDesc}
                   </p>
                 </div>
               </div>
@@ -589,18 +596,14 @@ function App() {
                   href='/SI'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  4. Apple News
+                  4. {t.appleNewsLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Sports Illustrated
+                    {t.appleNewsTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Designed a follow CTA and compact footer to enhance
-                    engagement on Apple News. Balanced Sports Illustrated’s bold
-                    branding with Apple’s minimal aesthetic, creating responsive
-                    UI components that are functional, unobtrusive, and scalable
-                    across devices.
+                    {t.appleNewsDesc}
                   </p>
                 </div>
               </div>
@@ -623,7 +626,7 @@ function App() {
                   onError={(e) => console.error('Video failed to load:', e)}
                 >
                   <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
-                  <p>Your browser doesn't support HTML5 video.</p>
+                  <p>{t.videoFallback}</p>
                 </video>
               </a>
               <div className='flex flex-row gap-2 justify-between'>
@@ -631,17 +634,14 @@ function App() {
                   href='/gumroad'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  5. Gumroad
+                  5. {t.gumroadLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                    Tipping + Upsell Integration
+                    {t.gumroadTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
-                    Redesigned Gumroad’s checkout to unify tipping, upsells, and
-                    payments in a single seamless flow. Delivered a fluid,
-                    intuitive interface that enhanced user experience while
-                    opening new revenue opportunities for creators.
+                    {t.gumroadDesc}
                   </p>
                 </div>
               </div>
@@ -649,7 +649,7 @@ function App() {
             {/* Copyright Section */}
             <div className='mt-4'>
               <p className='text-xs font-hanken text-gray-600 font-medium'>
-                © 2025 Aixa Jemmott-Musin
+                {t.copyright}
               </p>
             </div>
           </div>
@@ -660,7 +660,7 @@ function App() {
       {activePage === 'case-studies' && !currentCaseStudy && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-6'>
-            <p className='text-sm font-hanken text-gray-900'>Case Studies</p>
+            <p className='text-sm font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -700,16 +700,13 @@ function App() {
                 }}
                 className='text-sm font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'
               >
-                1. Polity
+                1. {t.polityTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Web3 Network Platform
+                {t.polityTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Bridging design and engineering to shape a high-quality Web3
-                platform. Designed intuitive flows, built scalable components in
-                React/TypeScript, and delivered production-ready experiences
-                that balance usability, consistency, and performance.
+                {t.polityDesc}
               </p>
             </div>
 
@@ -736,15 +733,13 @@ function App() {
                 onClick={() => setCurrentCaseStudy('welleasy')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                2. WellEasy
+                2. {t.welleasyTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Autoship + E-Commerce Experience
+                {t.welleasyTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Redesigned core shopping flows and the Autoship subscription
-                feature, delivering a more intuitive and consistent e-commerce
-                experience across desktop, tablet and mobile.
+                {t.welleasyDesc}
               </p>
             </div>
 
@@ -771,18 +766,13 @@ function App() {
                 onClick={() => setCurrentCaseStudy('TBD')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                3. TBD/Block
+                3. {t.tbdTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                C=equals
+                {t.tbdTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                I partnered with TBD/Block (a division of Block, formerly
-                Square) to design and engineer the launch platform for The
-                Lightning Network. My role focused on translating complex
-                financial technology into an intuitive, responsive web
-                experience - balancing design clarity, technical precision, and
-                scalability.
+                {t.tbdDesc}
               </p>
             </div>
 
@@ -809,16 +799,13 @@ function App() {
                 onClick={() => setCurrentCaseStudy('AppleNews')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                4. Apple News
+                4. {t.appleNewsTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Sports Illustrated
+                {t.appleNewsTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Designed a follow CTA and compact footer to enhance engagement
-                on Apple News. Balanced Sports Illustrated’s bold branding with
-                Apple’s minimal aesthetic, creating responsive UI components
-                that are functional, unobtrusive, and scalable across devices.
+                {t.appleNewsDesc}
               </p>
             </div>
 
@@ -837,30 +824,27 @@ function App() {
                   onError={(e) => console.error('Video failed to load:', e)}
                 >
                   <source src='/Gumroad-Proto-3.mp4' type='video/mp4' />
-                  <p>Your browser doesn't support HTML5 video.</p>
+                  <p>{t.videoFallback}</p>
                 </video>
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('Gumroad')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                5. Gumroad
+                5. {t.gumroadTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-                Tipping + Upsell Integration
+                {t.gumroadTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
-                Redesigned Gumroad’s checkout to unify tipping, upsells, and
-                payments in a single seamless flow. Delivered a fluid, intuitive
-                interface that enhanced user experience while opening new
-                revenue opportunities for creators.
+                {t.gumroadDesc}
               </p>
             </div>
 
             {/* Copyright Section */}
             <div className='mt-8'>
               <p className='text-xs font-hanken text-gray-500 font-medium'>
-                © 2025 Aixa Jemmott-Musin
+                {t.copyright}
               </p>
             </div>
           </div>
@@ -888,7 +872,7 @@ function App() {
           {/* Header */}
           <div className='mb-6'>
             <p className='text-sm font-hanken text-gray-900 mt-0-custom mb-5'>
-              CV
+              {t.cvTitle}
             </p>
             <div
               style={{
@@ -904,16 +888,15 @@ function App() {
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
               <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
-                Education
+                {t.education}
               </p>
               <div className='space-y-4 w-[70%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    SuperHi, Online Courses Design & Coding - 2020
+                    {t.educationCourse}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                    UAL (Central Saint Martin’s) - BA Textiles Design 2015 -
-                    2019
+                    {t.educationDegree}
                   </p>
                 </div>
               </div>
@@ -930,27 +913,27 @@ function App() {
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
               <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
-                Experience
+                {t.experience}
               </p>
               <div className='space-y-4 w-[70%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UX/UI Design Engineer Polity (Contract) 09.2024 - Current
+                    {t.experiencePolity}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UI Designer Simpatica (Freelance) 07.2024 - 08.2025
+                    {t.experienceSimpatica}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Creative Developer FlatPlan (Freelance) - 03.2024 - 05.2024
+                    {t.experienceFlatPlan}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Creative Coder Zacht Studios (Full-time) - 11.2021 - 10.2023
+                    {t.experienceZacht}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Web Designer/Developer EASOL (Freelance) - 10.2021 - 12.2023
+                    {t.experienceEasol}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                    Web Designer B12 Designs (Contract) - 05.2020 - 05.2021
+                    {t.experienceB12}
                   </p>
                 </div>
               </div>
@@ -968,49 +951,49 @@ function App() {
             <div>
               <div className='flex flex-row gap-4'>
                 <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
-                  Skills
+                  {t.skills}
                 </p>
                 <div className='space-y-4 w-[70%]'>
                   <div>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      UX/UI Design
+                      {t.skillsUxUiDesign}
                     </p>
 
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Figma
+                      {t.skillsFigma}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Responsive design
+                      {t.skillsResponsiveDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Webflow
+                      {t.skillsWebflow}
                     </p>
                     <p className='text-sm hidden font-hanken font-medium text-gray-800 mb-2'>
-                      Adobe Creative Suite
+                      {t.skillsAdobeCreativeSuite}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Apple News Design
+                      {t.skillsAppleNewsDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      HTML, CSS
+                      {t.skillsHtmlCss}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Javascript
+                      {t.skillsJavascript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Boostrap, Tailwind CSS
+                      {t.skillsBootstrapTailwind}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      React, Typescript
+                      {t.skillsReactTypescript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Next.js, Node.js
+                      {t.skillsNextNode}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      GitHub, Vercel
+                      {t.skillsGithubVercel}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                      Fluent in Spanish
+                      {t.skillsFluentSpanish}
                     </p>
                   </div>
                 </div>
@@ -1028,7 +1011,7 @@ function App() {
             {/* Last Updated Section */}
             <div className='flex flex-row gap-1 font-hanken'>
               <p className='text-xs font-hanken  text-gray-600 font-medium'>
-                Last Updated
+                {t.lastUpdated}
               </p>
               <div className='w-[60%] font-hanken '>
                 <p className='text-xs font-hanken  text-gray-600 font-medium'>
@@ -1044,7 +1027,7 @@ function App() {
       {activePage === 'cv' && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 max-sm:px-3 py-8 pb-20'>
           <div className='mb-6'>
-            <p className='text-sm font-hanken text-gray-900'>CV</p>
+            <p className='text-sm font-hanken text-gray-900'>{t.cvTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -1059,16 +1042,15 @@ function App() {
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
               <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
-                Education
+                {t.education}
               </p>
               <div className='space-y-4 w-[100%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    SuperHi, Online Courses Design & Coding - 2020
+                    {t.educationCourse}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                    UAL (Central Saint Martin's) - BA Textiles Design 2015 -
-                    2019
+                    {t.educationDegree}
                   </p>
                 </div>
               </div>
@@ -1077,27 +1059,27 @@ function App() {
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
               <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
-                Experience
+                {t.experience}
               </p>
               <div className='space-y-4 w-[100%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UX/UI Design Engineer Polity (Contract) 09.2024 - Current
+                    {t.experiencePolity}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    UI Designer Simpatica (Freelance) 07.2024 - 08.2025
+                    {t.experienceSimpatica}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Creative Developer FlatPlan (Freelance) - 03.2024 - 05.2024
+                    {t.experienceFlatPlan}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Creative Coder Zacht Studios (Full-time) - 11.2021 - 10.2023
+                    {t.experienceZacht}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                    Web Designer/Developer EASOL (Freelance) - 10.2021 - 12.2023
+                    {t.experienceEasol}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                    Web Designer B12 Designs (Contract) - 05.2020 - 05.2021
+                    {t.experienceB12}
                   </p>
                 </div>
               </div>
@@ -1107,45 +1089,45 @@ function App() {
             <div>
               <div className='flex flex-row gap-4'>
                 <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
-                  Skills
+                  {t.skills}
                 </p>
                 <div className='space-y-4 w-[100%]'>
                   <div>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      UX/UI Design
+                      {t.skillsUxUiDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Figma
+                      {t.skillsFigma}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Responsive design
+                      {t.skillsResponsiveDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Webflow
+                      {t.skillsWebflow}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Apple News Design
+                      {t.skillsAppleNewsDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      HTML, CSS
+                      {t.skillsHtmlCss}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Javascript
+                      {t.skillsJavascript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Boostrap, Tailwind CSS
+                      {t.skillsBootstrapTailwind}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      React, Typescript
+                      {t.skillsReactTypescript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      Next.js, Node.js
+                      {t.skillsNextNode}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
-                      GitHub, Vercel
+                      {t.skillsGithubVercel}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
-                      Fluent in Spanish
+                      {t.skillsFluentSpanish}
                     </p>
                   </div>
                 </div>
@@ -1155,7 +1137,7 @@ function App() {
             {/* Last Updated Section */}
             <div className='flex flex-row gap-1 font-hanken'>
               <p className='text-xs font-hanken text-gray-500 font-medium'>
-                Last Updated
+                {t.lastUpdated}
               </p>
               <div className='w-[60%] font-hanken'>
                 <p className='text-xs font-hanken text-gray-500 font-medium'>
