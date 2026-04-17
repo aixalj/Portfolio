@@ -4,8 +4,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-size-sm: 16px;
-  --line-height-sm: 20px;
+  --text-sm: 16px;
+  --text-sm--line-height: 20px;
 }
 
 /* Remove default browser scroll */
