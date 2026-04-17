@@ -50,7 +50,7 @@ const Block = () => {
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.tbdLabel}
             </h3>
-            <h4 className='text-sm font-hanken font-medium text-gray-800 mb-4 italic'>
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
               {t.tbdTitle}
             </h4>
           </div>

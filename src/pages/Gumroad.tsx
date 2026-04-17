@@ -45,8 +45,8 @@ const Gumroad = () => {
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.gumroadLabel}
             </h3>
-            <h4 className='text-sm font-hanken font-medium text-gray-800 mb-4 italic'>
-              {t.gumroadLabel}
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+              {t.gumroadTitle}
             </h4>
           </div>
           <div className='flex justify-center mb-4'>
