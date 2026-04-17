@@ -50,9 +50,17 @@ const WellEasy = () => {
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.welleasyLabel}
             </h3>
-            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
               {t.welleasyTitle}
             </h4>
+            <a
+              href='https://welleasy.co.uk/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-sm text-gray-500 underline hover:text-gray-700'
+            >
+              https://welleasy.co.uk/
+            </a>
           </div>
           <div className='flex justify-center mb-4'>
             <img
