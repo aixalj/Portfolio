@@ -80,14 +80,16 @@ const WellEasy = () => {
         
 
         <div className='space-y-4'>
+
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              {t.welleasyChallengeLabel}
+              {t.challengeLabel}
             </h5>
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.welleasyChallenge}
             </p>
           </div>
+
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.overview}
