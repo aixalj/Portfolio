@@ -387,16 +387,8 @@ function App() {
                 Github
               </a>
             </div>
-            <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
-              I design at the intersection of intuition and engineering - where
-              form whispers to function and technology feels almost invisible.
-              My work extends beyond aesthetics or code; it’s about building
-              experiences that move seamlessly, grounded in research, testing,
-              and technical precision. I thrive on solving complex problems with
-              elegant simplicity, shaping digital products that feel inevitable
-              - interfaces that anticipate, rather than ask. With equal fluency
-              in design and engineering, I bring ideas from concept to reality,
-              always with the user at the center.
+            <p className=’text-sm text-gray-800 leading-relaxed mb-4 w-full’>
+              {t.bio}
             </p>
           </div>
 
