@@ -15,11 +15,11 @@ const Block = () => {
             window.location.href = '/';
             localStorage.setItem('showCaseStudies', 'true');
           }}
-          className='text-lg font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
+          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
           ← Back
         </button>
-        <p className='text-lg font-hanken text-gray-900'>{t.caseStudyLabel}</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -47,10 +47,10 @@ const Block = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-lg font-hanken text-gray-600 mb-2'>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.tbdLabel}
             </h3>
-            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+            <h4 className='text-sm font-hanken font-medium text-gray-800 mb-4 italic'>
               {t.tbdTitle}
             </h4>
           </div>
@@ -63,26 +63,26 @@ const Block = () => {
           </div>
         </div>
         <div>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.roleLabel}</span> {t.blockRole}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.clientLabel}</span> {t.blockClient}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.scopeLabel}</span> {t.blockScope}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.stackLabel}</span> {t.blockStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.overview}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.blockOverview}
             </p>
           </div>
@@ -128,7 +128,7 @@ const Block = () => {
           <div className='w-full mb-6 flex items-center justify-end max-lg:justify-start max-sm:justify-center max-sm:w-full'>
             <div className='flex items-center space-x-4 max-sm:w-full max-sm:justify-center'>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>
+                <span className='text-sm font-medium text-gray-800'>
                   Design
                 </span>
               </div>
@@ -136,13 +136,13 @@ const Block = () => {
               <div className='text-gray-400 max-lg:hidden'>→</div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>Code</span>
+                <span className='text-sm font-medium text-gray-800'>Code</span>
               </div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='text-gray-400 max-lg:hidden'>→</div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:flex-1 max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>
+                <span className='text-sm font-medium text-gray-800'>
                   Contentful
                 </span>
               </div>
@@ -154,10 +154,10 @@ const Block = () => {
               {/* Left side content can go here if needed */}
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
-              <h5 className='text-lg font-hanken font-medium text-gray-800'>
+              <h5 className='text-sm font-hanken font-medium text-gray-800'>
                 {t.process}
               </h5>
-              <p className='text-lg text-gray-600 leading-relaxed max-lg:w-full'>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
                 {t.blockProcess}
               </p>
             </div>
@@ -182,10 +182,10 @@ const Block = () => {
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.testingDeployment}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
               {t.blockTestingDeployment}
             </p>
           </div>
@@ -194,13 +194,13 @@ const Block = () => {
           <div className='w-full mb-6 flex items-center justify-start'>
             <div className='flex items-center space-x-4 max-lg:flex-row max-lg:w-full max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 max-sm:space-x-0'>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>Figma</span>
+                <span className='text-sm font-medium text-gray-800'>Figma</span>
               </div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='text-gray-400 max-lg:hidden'>→</div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>
+                <span className='text-sm font-medium text-gray-800'>
                   React/Next.js
                 </span>
               </div>
@@ -208,7 +208,7 @@ const Block = () => {
               <div className='text-gray-400 max-lg:hidden'>→</div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>
+                <span className='text-sm font-medium text-gray-800'>
                   Contentful
                 </span>
               </div>
@@ -216,7 +216,7 @@ const Block = () => {
               <div className='text-gray-400 max-lg:hidden'>→</div>
               <div className='w-8 h-[1px] bg-gray-300 max-lg:hidden'></div>
               <div className='border border-gray-300 px-4 py-2 rounded-lg max-sm:text-center'>
-                <span className='text-lg font-medium text-gray-800'>
+                <span className='text-sm font-medium text-gray-800'>
                   Netlify
                 </span>
               </div>
@@ -224,10 +224,10 @@ const Block = () => {
           </div>
 
           <div>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.results}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.blockResults}
             </p>
           </div>
@@ -238,13 +238,13 @@ const Block = () => {
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/welleasy')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/si')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>
@@ -256,13 +256,13 @@ const Block = () => {
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/welleasy')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/si')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>

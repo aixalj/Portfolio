@@ -3,6 +3,11 @@
 
 @import 'tailwindcss';
 
+@theme {
+  --font-size-sm: 16px;
+  --line-height-sm: 20px;
+}
+
 /* Remove default browser scroll */
 html,
 body {

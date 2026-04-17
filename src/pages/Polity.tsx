@@ -58,11 +58,11 @@ const AddressesTable = ({
             window.location.href = '/';
             localStorage.setItem('showCaseStudies', 'true');
           }}
-          className='text-lg font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
+          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
           ← Back
         </button>
-        <p className='text-lg font-hanken text-gray-900'>{t.caseStudyLabel}</p>
+        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -90,10 +90,10 @@ const AddressesTable = ({
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-lg font-hanken text-gray-600 mb-2'>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.polityLabel}
             </h3>
-            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+            <h4 className='text-sm font-hanken font-medium text-gray-800 mb-4 italic'>
               {t.polityTitle}
             </h4>
           </div>
@@ -106,26 +106,26 @@ const AddressesTable = ({
           </div>
         </div>
         <div>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.roleLabel}</span> {t.polityRole}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.clientLabel}</span> {t.polityClient}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.scopeLabel}</span> {t.polityScope}
           </h5>
-          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.stackLabel}</span> {t.polityStack}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.overview}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.polityOverview}
             </p>
           </div>
@@ -178,10 +178,10 @@ const AddressesTable = ({
               {/* Left side content can go here if needed */}
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
-              <h5 className='text-lg font-hanken font-medium text-gray-800'>
+              <h5 className='text-sm font-hanken font-medium text-gray-800'>
                 {t.process}
               </h5>
-              <p className='text-lg text-gray-600 leading-relaxed max-lg:w-full'>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
                 {t.polityProcess}
               </p>
             </div>
@@ -231,10 +231,10 @@ const AddressesTable = ({
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.polityDesignLabel}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
               {t.polityDesignDesc}
             </p>
           </div>
@@ -273,10 +273,10 @@ const AddressesTable = ({
               {/* Left side content can go here if needed */}
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
-              <h5 className='text-lg font-hanken font-medium text-gray-800'>
+              <h5 className='text-sm font-hanken font-medium text-gray-800'>
                 {t.polityEngineeringLabel}
               </h5>
-              <p className='text-lg text-gray-600 leading-relaxed max-lg:w-full'>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
                 {t.polityEngineeringDesc}
               </p>
             </div>
@@ -303,10 +303,10 @@ const AddressesTable = ({
           </div>
 
           <div>
-            <h5 className='text-lg font-hanken font-medium text-gray-800'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.results}
             </h5>
-            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.polityResults}
             </p>
           </div>
@@ -317,13 +317,13 @@ const AddressesTable = ({
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/gumroad')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/welleasy')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>
@@ -335,13 +335,13 @@ const AddressesTable = ({
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/gumroad')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/welleasy')}
-              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>
