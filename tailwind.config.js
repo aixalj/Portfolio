@@ -9,7 +9,7 @@ export default {
       },
       fontSize: {
         'sm': ['16px', '20px'],
-        'lg': ['16px', '20px'],
+        'lg': ['20px' , '28px'],
       },
     },
   },
