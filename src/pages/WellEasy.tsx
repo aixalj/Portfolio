@@ -245,6 +245,15 @@ const WellEasy = () => {
             </p>
           </div>
 
+          <div className='mb-10 max-sm:mb-5'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+              {t.welleasyAutoshipLabel}
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full whitespace-pre-line'>
+              {t.welleasyAutoshipDesc}
+            </p>
+          </div>
+
           {/* Video Section */}
           <div className='w-full mb-6 flex flex-row gap-4 items-center max-sm:flex-col'>
             <div className='w-1/5 max-sm:w-1/5'>
@@ -261,6 +270,15 @@ const WellEasy = () => {
                 className='w-full object-contain'
               />
             </div>
+          </div>
+
+          <div className='mb-10 max-sm:mb-5'>
+            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+              {t.welleasyKeyFeaturesLabel}
+            </h5>
+            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full whitespace-pre-line'>
+              {t.welleasyKeyFeaturesDesc}
+            </p>
           </div>
 
           <div>
