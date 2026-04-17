@@ -47,7 +47,7 @@ const WellEasy = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col mb-2'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+            <h3 className='text-lg font-hanken text-gray-600 mb-2'>
               {t.welleasyLabel}
             </h3>
             <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>

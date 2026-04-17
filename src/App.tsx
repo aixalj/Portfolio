@@ -488,7 +488,7 @@ function App() {
                   1. {t.polityLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
-                  <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.polityTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
@@ -525,7 +525,7 @@ function App() {
                   2. {t.welleasyLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
-                  <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.welleasyTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
@@ -562,7 +562,7 @@ function App() {
                   3. {t.tbdLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
-                  <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.tbdTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
@@ -599,7 +599,7 @@ function App() {
                   4. {t.appleNewsLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
-                  <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.appleNewsTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
@@ -637,7 +637,7 @@ function App() {
                   5. {t.gumroadLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
-                  <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.gumroadTitle}
                   </h4>
                   <p className='text-sm text-gray-800 leading-relaxed'>
@@ -702,7 +702,7 @@ function App() {
               >
                 1. {t.polityTitle}
               </button>
-              <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.polityTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
@@ -735,7 +735,7 @@ function App() {
               >
                 2. {t.welleasyTitle}
               </button>
-              <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.welleasyTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
@@ -768,7 +768,7 @@ function App() {
               >
                 3. {t.tbdTitle}
               </button>
-              <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.tbdTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
@@ -801,7 +801,7 @@ function App() {
               >
                 4. {t.appleNewsTitle}
               </button>
-              <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.appleNewsTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
@@ -833,7 +833,7 @@ function App() {
               >
                 5. {t.gumroadTitle}
               </button>
-              <h4 className='text-sm font-hanken font-medium text-gray-800 mb-2 italic'>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.gumroadTitle}
               </h4>
               <p className='text-sm text-gray-600 leading-relaxed'>
