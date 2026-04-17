@@ -15,11 +15,11 @@ const AppleNews = () => {
             window.location.href = '/';
             localStorage.setItem('showCaseStudies', 'true');
           }}
-          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
+          className='text-lg font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
+        <p className='text-lg font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -47,7 +47,7 @@ const AppleNews = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+            <h3 className='text-lg font-hanken text-gray-600 mb-2'>
               {t.appleNewsPageTitle}
             </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
@@ -63,26 +63,26 @@ const AppleNews = () => {
           </div>
         </div>
         <div>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.roleLabel}</span> {t.appleNewsRole}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.clientLabel}</span> {t.appleNewsClient}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.scopeLabel}</span> {t.appleNewsScope}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.toolsLabel}</span> {t.appleNewsTools}
           </h5>
         </div>
 
         <div className='space-y-4'>
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.overview}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.appleNewsOverview}
             </p>
           </div>
@@ -148,10 +148,10 @@ const AppleNews = () => {
               {/* Left side content can go here if needed */}
             </div>
             <div className='w-[50%] mb-10 max-lg:w-full max-sm:mb-5'>
-              <h5 className='text-sm font-hanken font-medium text-gray-800'>
+              <h5 className='text-lg font-hanken font-medium text-gray-800'>
                 {t.process}
               </h5>
-              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
+              <p className='text-lg text-gray-600 leading-relaxed max-lg:w-full'>
                 {t.appleNewsProcess}
               </p>
             </div>
@@ -221,10 +221,10 @@ const AppleNews = () => {
           </div>
 
           <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.results}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.appleNewsResults}
             </p>
           </div>
@@ -235,13 +235,13 @@ const AppleNews = () => {
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/tbd')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/gumroad')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>
@@ -253,13 +253,13 @@ const AppleNews = () => {
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/tbd')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/gumroad')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>

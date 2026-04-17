@@ -15,11 +15,11 @@ const WellEasy = () => {
             window.location.href = '/';
             localStorage.setItem('showCaseStudies', 'true');
           }}
-          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
+          className='text-lg font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
         >
           ← Back
         </button>
-        <p className='text-sm font-hanken text-gray-900'>{t.caseStudyLabel}</p>
+        <p className='text-lg font-hanken text-gray-900'>{t.caseStudyLabel}</p>
         <div
           style={{
             borderTop: '1px solid #d9d9d9',
@@ -47,7 +47,7 @@ const WellEasy = () => {
 
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+            <h3 className='text-lg font-hanken text-gray-600 mb-2'>
               {t.welleasyLabel}
             </h3>
             <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -57,7 +57,7 @@ const WellEasy = () => {
               href='https://welleasy.co.uk/'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-sm text-gray-500 underline hover:text-gray-700'
+              className='text-lg text-gray-500 underline hover:text-gray-700'
             >
               https://welleasy.co.uk/
             </a>
@@ -71,16 +71,16 @@ const WellEasy = () => {
           </div>
         </div>
         <div>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.roleLabel}</span> {t.welleasyRole}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.clientLabel}</span> {t.welleasyClient}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.scopeLabel}</span> {t.welleasyScope}
           </h5>
-          <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+          <h5 className='text-lg font-hanken font-medium text-gray-800 mb-2'>
             <span className='font-bold'>{t.stackLabel}</span> {t.welleasyStack}
           </h5>
         </div>
@@ -90,19 +90,19 @@ const WellEasy = () => {
         <div className='space-y-4'>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.challengeLabel}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.welleasyChallenge}
             </p>
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.overview}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.welleasyOverview}
             </p>
           </div>
@@ -168,10 +168,10 @@ const WellEasy = () => {
               {/* Left side content can go here if needed */}
             </div>
             <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
-              <h5 className='text-sm font-hanken font-medium text-gray-800'>
+              <h5 className='text-lg font-hanken font-medium text-gray-800'>
                 {t.process}
               </h5>
-              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
+              <p className='text-lg text-gray-600 leading-relaxed max-lg:w-full'>
                 {t.welleasyProcess}
               </p>
             </div>
@@ -237,19 +237,19 @@ const WellEasy = () => {
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.welleasyDesignLabel}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[50%] max-lg:w-full'>
               {t.welleasyDesignDesc}
             </p>
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.welleasyAutoshipLabel}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[50%] max-lg:w-full whitespace-pre-line'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[50%] max-lg:w-full whitespace-pre-line'>
               {t.welleasyAutoshipDesc}
             </p>
           </div>
@@ -273,19 +273,19 @@ const WellEasy = () => {
           </div>
 
           <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.welleasyKeyFeaturesLabel}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full whitespace-pre-line'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full whitespace-pre-line'>
               {t.welleasyKeyFeaturesDesc}
             </p>
           </div>
 
           <div>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
+            <h5 className='text-lg font-hanken font-medium text-gray-800'>
               {t.results}
             </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
+            <p className='text-lg text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.welleasyResults}
             </p>
           </div>
@@ -296,13 +296,13 @@ const WellEasy = () => {
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
               onClick={() => (window.location.href = '/polity')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/tbd')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>
@@ -314,13 +314,13 @@ const WellEasy = () => {
           <div className='flex justify-between items-center'>
             <button
               onClick={() => (window.location.href = '/polity')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
             </button>
             <button
               onClick={() => (window.location.href = '/tbd')}
-              className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
+              className='text-lg font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
             </button>

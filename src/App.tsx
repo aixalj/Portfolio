@@ -151,7 +151,7 @@ function App() {
       >
         {/* Header */}
         <div className='mb-6'>
-          <p className='text-sm font-hanken text-gray-900 mb-2 whitespace-nowrap'>
+          <p className='text-lg font-hanken text-gray-900 mb-2 whitespace-nowrap'>
             {t.title}
           </p>
           <div
@@ -165,24 +165,24 @@ function App() {
 
         {/* Profile Section */}
         <div className=''>
-          <p className='text-sm font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
+          <p className='text-lg font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
           <a
             href='https://www.aixajemmottmusin.com/'
-            className='text-sm font-hanken text-gray-900 mb-4'
+            className='text-lg font-hanken text-gray-900 mb-4'
           >
             {t.name}
           </a>
           <div className='space-y-2 mb-4 mt-4 flex flex-col'>
             <a
               href='https://www.linkedin.com/in/aixa-jemmott-musin/'
-              className='text-sm text-gray-900 underline'
+              className='text-lg text-gray-900 underline'
               target='_blank'
             >
               LinkedIn
             </a>
             <a
               href='https://github.com/aixalj'
-              className='text-sm text-gray-900 underline'
+              className='text-lg text-gray-900 underline'
               target='_blank'
             >
               Github
@@ -190,7 +190,7 @@ function App() {
           </div>
           
 
-          <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
+          <p className='text-lg text-gray-900 leading-relaxed mb-4 w-[100%]'>
             {t.bio}
           </p>
         </div>
@@ -201,14 +201,14 @@ function App() {
           <div className='space-y-2'>
             <a
               href='mailto:aixa.jemmottmusin@gmail.com'
-              className='block text-sm text-gray-800 underline'
+              className='block text-lg text-gray-800 underline'
               target='_blank'
             >
               {t.contact}
             </a>
             <button
               onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-              className='block text-sm text-gray-800 underline cursor-pointer hover:text-gray-600'
+              className='block text-lg text-gray-800 underline cursor-pointer hover:text-gray-600'
             >
               {t.language}
             </button>
@@ -234,7 +234,7 @@ function App() {
       {activePage === 'home' && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-8'>
-            <p className='text-sm font-hanken text-gray-900 mb-2'>
+            <p className='text-lg font-hanken text-gray-900 mb-2'>
               {t.title}
             </p>
             <div
@@ -364,30 +364,30 @@ function App() {
           </div>
 
           <div className='mb-8'>
-            <p className='text-sm font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
+            <p className='text-lg font-hanken text-gray-900 mb-2'>{t.portfolio}</p>
             <a
               href='https://www.aixajemmottmusin.com/'
-              className='text-sm font-hanken text-gray-700 mb-4 block'
+              className='text-lg font-hanken text-gray-700 mb-4 block'
             >
               {t.name}
             </a>
             <div className='space-y-2 mb-4 mt-4 flex flex-col gap-2'>
               <a
                 href='https://www.linkedin.com/in/aixa-jemmott-musin/'
-                className='text-sm text-gray-700 underline block'
+                className='text-lg text-gray-700 underline block'
                 target='_blank'
               >
                 LinkedIn
               </a>
               <a
                 href='https://github.com/aixalj'
-                className='text-sm text-gray-700 underline block'
+                className='text-lg text-gray-700 underline block'
                 target='_blank'
               >
                 Github
               </a>
             </div>
-            <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
+            <p className='text-lg text-gray-800 leading-relaxed mb-4 w-full'>
               I design at the intersection of intuition and engineering - where
               form whispers to function and technology feels almost invisible.
               My work extends beyond aesthetics or code; it’s about building
@@ -448,7 +448,7 @@ function App() {
         <div>
           {/* Header */}
           <div className='mb-4'>
-            <p className='text-sm font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
+            <p className='text-lg font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -483,7 +483,7 @@ function App() {
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/polity'
-                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                  className='text-lg font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   1. {t.polityLabel}
                 </a>
@@ -491,7 +491,7 @@ function App() {
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.polityTitle}
                   </h4>
-                  <p className='text-sm text-gray-800 leading-relaxed'>
+                  <p className='text-lg text-gray-800 leading-relaxed'>
                     {t.polityDesc}
                   </p>
                 </div>
@@ -520,7 +520,7 @@ function App() {
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/welleasy'
-                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                  className='text-lg font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   2. {t.welleasyLabel}
                 </a>
@@ -528,7 +528,7 @@ function App() {
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.welleasyTitle}
                   </h4>
-                  <p className='text-sm text-gray-800 leading-relaxed'>
+                  <p className='text-lg text-gray-800 leading-relaxed'>
                     {t.welleasyDesc}
                   </p>
                 </div>
@@ -557,7 +557,7 @@ function App() {
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/tbd'
-                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                  className='text-lg font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   3. {t.tbdLabel}
                 </a>
@@ -565,7 +565,7 @@ function App() {
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.tbdTitle}
                   </h4>
-                  <p className='text-sm text-gray-800 leading-relaxed'>
+                  <p className='text-lg text-gray-800 leading-relaxed'>
                     {t.tbdDesc}
                   </p>
                 </div>
@@ -594,7 +594,7 @@ function App() {
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/SI'
-                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                  className='text-lg font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   4. {t.appleNewsLabel}
                 </a>
@@ -602,7 +602,7 @@ function App() {
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.appleNewsTitle}
                   </h4>
-                  <p className='text-sm text-gray-800 leading-relaxed'>
+                  <p className='text-lg text-gray-800 leading-relaxed'>
                     {t.appleNewsDesc}
                   </p>
                 </div>
@@ -632,7 +632,7 @@ function App() {
               <div className='flex flex-row gap-2 justify-between'>
                 <a
                   href='/gumroad'
-                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                  className='text-lg font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
                   5. {t.gumroadLabel}
                 </a>
@@ -640,7 +640,7 @@ function App() {
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.gumroadTitle}
                   </h4>
-                  <p className='text-sm text-gray-800 leading-relaxed'>
+                  <p className='text-lg text-gray-800 leading-relaxed'>
                     {t.gumroadDesc}
                   </p>
                 </div>
@@ -660,7 +660,7 @@ function App() {
       {activePage === 'case-studies' && !currentCaseStudy && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-6'>
-            <p className='text-sm font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
+            <p className='text-lg font-hanken text-gray-900'>{t.caseStudiesTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -698,14 +698,14 @@ function App() {
                 onClick={() => {
                   setCurrentCaseStudy('polity');
                 }}
-                className='text-sm font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'
+                className='text-lg font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'
               >
                 1. {t.polityTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.polityTitle}
               </h4>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-lg text-gray-600 leading-relaxed'>
                 {t.polityDesc}
               </p>
             </div>
@@ -731,14 +731,14 @@ function App() {
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('welleasy')}
-                className='text-sm font-hanken text-gray-600 mb-2'
+                className='text-lg font-hanken text-gray-600 mb-2'
               >
                 2. {t.welleasyTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.welleasyTitle}
               </h4>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-lg text-gray-600 leading-relaxed'>
                 {t.welleasyDesc}
               </p>
             </div>
@@ -764,14 +764,14 @@ function App() {
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('TBD')}
-                className='text-sm font-hanken text-gray-600 mb-2'
+                className='text-lg font-hanken text-gray-600 mb-2'
               >
                 3. {t.tbdTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.tbdTitle}
               </h4>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-lg text-gray-600 leading-relaxed'>
                 {t.tbdDesc}
               </p>
             </div>
@@ -797,14 +797,14 @@ function App() {
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('AppleNews')}
-                className='text-sm font-hanken text-gray-600 mb-2'
+                className='text-lg font-hanken text-gray-600 mb-2'
               >
                 4. {t.appleNewsTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.appleNewsTitle}
               </h4>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-lg text-gray-600 leading-relaxed'>
                 {t.appleNewsDesc}
               </p>
             </div>
@@ -829,14 +829,14 @@ function App() {
               </div>
               <button
                 onClick={() => setCurrentCaseStudy('Gumroad')}
-                className='text-sm font-hanken text-gray-600 mb-2'
+                className='text-lg font-hanken text-gray-600 mb-2'
               >
                 5. {t.gumroadTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.gumroadTitle}
               </h4>
-              <p className='text-sm text-gray-600 leading-relaxed'>
+              <p className='text-lg text-gray-600 leading-relaxed'>
                 {t.gumroadDesc}
               </p>
             </div>
@@ -871,7 +871,7 @@ function App() {
         <div>
           {/* Header */}
           <div className='mb-6'>
-            <p className='text-sm font-hanken text-gray-900 mt-0-custom mb-5'>
+            <p className='text-lg font-hanken text-gray-900 mt-0-custom mb-5'>
               {t.cvTitle}
             </p>
             <div
@@ -887,15 +887,15 @@ function App() {
           <div className='space-y-8'>
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
+              <p className='text-lg font-hanken text-gray-700 mb-4 w-[22%]'>
                 {t.education}
               </p>
               <div className='space-y-4 w-[70%]'>
                 <div>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.educationCourse}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                     {t.educationDegree}
                   </p>
                 </div>
@@ -912,27 +912,27 @@ function App() {
 
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
+              <p className='text-lg font-hanken text-gray-700 mb-4 w-[22%]'>
                 {t.experience}
               </p>
               <div className='space-y-4 w-[70%]'>
                 <div>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experiencePolity}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceSimpatica}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceFlatPlan}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceZacht}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceEasol}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                     {t.experienceB12}
                   </p>
                 </div>
@@ -950,49 +950,49 @@ function App() {
             {/* Skills Section */}
             <div>
               <div className='flex flex-row gap-4'>
-                <p className='text-sm font-hanken text-gray-700 mb-4 w-[22%]'>
+                <p className='text-lg font-hanken text-gray-700 mb-4 w-[22%]'>
                   {t.skills}
                 </p>
                 <div className='space-y-4 w-[70%]'>
                   <div>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsUxUiDesign}
                     </p>
 
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsFigma}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsResponsiveDesign}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsWebflow}
                     </p>
-                    <p className='text-sm hidden font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg hidden font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsAdobeCreativeSuite}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsAppleNewsDesign}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsHtmlCss}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsJavascript}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsBootstrapTailwind}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsReactTypescript}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsNextNode}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsGithubVercel}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                       {t.skillsFluentSpanish}
                     </p>
                   </div>
@@ -1027,7 +1027,7 @@ function App() {
       {activePage === 'cv' && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-6 max-sm:px-3 py-8 pb-20'>
           <div className='mb-6'>
-            <p className='text-sm font-hanken text-gray-900'>{t.cvTitle}</p>
+            <p className='text-lg font-hanken text-gray-900'>{t.cvTitle}</p>
             <div
               style={{
                 borderTop: '1px solid #d9d9d9',
@@ -1041,15 +1041,15 @@ function App() {
           <div className='space-y-8'>
             {/* Education Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
+              <p className='text-lg font-hanken text-gray-700 mb-4 w-[25%]'>
                 {t.education}
               </p>
               <div className='space-y-4 w-[100%]'>
                 <div>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.educationCourse}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                     {t.educationDegree}
                   </p>
                 </div>
@@ -1058,27 +1058,27 @@ function App() {
 
             {/* Experience Section */}
             <div className='flex flex-row gap-4'>
-              <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
+              <p className='text-lg font-hanken text-gray-700 mb-4 w-[25%]'>
                 {t.experience}
               </p>
               <div className='space-y-4 w-[100%]'>
                 <div>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experiencePolity}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceSimpatica}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceFlatPlan}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceZacht}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                     {t.experienceEasol}
                   </p>
-                  <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                  <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                     {t.experienceB12}
                   </p>
                 </div>
@@ -1088,45 +1088,45 @@ function App() {
             {/* Skills Section */}
             <div>
               <div className='flex flex-row gap-4'>
-                <p className='text-sm font-hanken text-gray-700 mb-4 w-[25%]'>
+                <p className='text-lg font-hanken text-gray-700 mb-4 w-[25%]'>
                   {t.skills}
                 </p>
                 <div className='space-y-4 w-[100%]'>
                   <div>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsUxUiDesign}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsFigma}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsResponsiveDesign}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsWebflow}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsAppleNewsDesign}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsHtmlCss}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsJavascript}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsBootstrapTailwind}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsReactTypescript}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsNextNode}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsGithubVercel}
                     </p>
-                    <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
+                    <p className='text-lg font-hanken font-medium text-gray-800 mb-0'>
                       {t.skillsFluentSpanish}
                     </p>
                   </div>
