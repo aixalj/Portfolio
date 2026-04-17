@@ -8,7 +8,7 @@ export default {
         sans: ['Hanken Grotesk', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        'sm': ['15px', '20px'],
+        'sm': ['16px', '20px'],
       },
     },
   },
