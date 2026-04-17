@@ -387,7 +387,7 @@ function App() {
                 Github
               </a>
             </div>
-            <p className=’text-sm text-gray-800 leading-relaxed mb-4 w-full’>
+            <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
               {t.bio}
             </p>
           </div>
