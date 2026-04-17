@@ -92,7 +92,7 @@ function App() {
       <div className='flex justify-around py-3'>
         <button
           onClick={() => setActivePage('home')}
-          className={`text-xs font-hanken px-3 py-2 ${
+          className={`text-sm font-hanken px-3 py-2 ${
             activePage === 'home' ? 'text-gray-800 underline' : 'text-gray-800'
           }`}
         >
@@ -100,7 +100,7 @@ function App() {
         </button>
         <button
           onClick={() => setActivePage('case-studies')}
-          className={`text-xs font-hanken px-3 py-2 ${
+          className={`text-sm font-hanken px-3 py-2 ${
             activePage === 'case-studies'
               ? 'text-gray-800 underline'
               : 'text-gray-800'
@@ -110,7 +110,7 @@ function App() {
         </button>
         <button
           onClick={() => setActivePage('cv')}
-          className={`text-xs font-hanken px-3 py-2 ${
+          className={`text-sm font-hanken px-3 py-2 ${
             activePage === 'cv' ? 'text-gray-800 underline' : 'text-gray-800'
           }`}
         >
@@ -118,13 +118,13 @@ function App() {
         </button>
         <a
           href='mailto:aixa.jemmottmusin@gmail.com'
-          className='text-xs font-hanken px-3 py-2 text-gray-800'
+          className='text-sm font-hanken px-3 py-2 text-gray-800'
         >
           {t.contact}
         </a>
         <button
           onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-          className='text-xs font-hanken px-3 py-2 text-gray-800 underline hover:text-gray-600'
+          className='text-sm font-hanken px-3 py-2 text-gray-800 underline hover:text-gray-600'
         >
           {t.language}
         </button>

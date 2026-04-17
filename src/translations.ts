@@ -2,7 +2,7 @@ export type Language = 'en' | 'es';
 
 export const translations = {
   en: {
-    title: 'UX/UI Design Engineer',
+    title: 'UX/UI Design & Engineer',
     portfolio: 'Portfolio',
     name: 'Aixa Jemmott-Musin',
     bio: 'I design at the intersection of intuition and engineering - where form whispers to function and technology feels almost invisible. My work extends beyond aesthetics or code; it\'s about building experiences that move seamlessly, grounded in research, testing, and technical precision. I thrive on solving complex problems with elegant simplicity, shaping digital products that feel inevitable - interfaces that anticipate, rather than ask. With equal fluency in design and engineering, I bring ideas from concept to reality, always with the user at the center.',
@@ -116,7 +116,7 @@ export const translations = {
     copyright: '© 2025 Aixa Jemmott-Musin',
   },
   es: {
-    title: 'Ingeniera de Diseño UX/UI',
+    title: 'Diseño UX/UI y Desarrolladora',
     portfolio: 'Portafolio',
     name: 'Aixa Jemmott-Musin',
     bio: 'Diseño en la intersección entre la intuición y la ingeniería - donde la forma susurra a la función y la tecnología se siente casi invisible. Mi trabajo va más allá de la estética o el código; se trata de construir experiencias que se mueven sin problemas, basadas en investigación, pruebas y precisión técnica. Me encanta resolver problemas complejos con elegancia simple, creando productos digitales que se sienten inevitables - interfaces que anticipan, en lugar de preguntar. Con igual dominio en diseño e ingeniería, llevo ideas de concept a realidad, siempre con el usuario en el centro.',
