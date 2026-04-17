@@ -6,6 +6,8 @@
 @theme {
   --text-sm: 16px;
   --text-sm--line-height: 20px;
+  --text-lg: 20px;
+  --text-lg--line-height: 28px;
 }
 
 /* Remove default browser scroll */
