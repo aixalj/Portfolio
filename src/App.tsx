@@ -910,6 +910,9 @@ function App() {
               <div className='space-y-4 w-[70%]'>
                 <div>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    {t.experienceTasteMakers}
+                  </p>
+                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     {t.experiencePolity}
                   </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
@@ -1055,6 +1058,9 @@ function App() {
               </p>
               <div className='space-y-4 w-[100%]'>
                 <div>
+                  <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                    {t.experienceTasteMakers}
+                  </p>
                   <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                     {t.experiencePolity}
                   </p>
