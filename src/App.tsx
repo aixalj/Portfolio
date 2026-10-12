@@ -71,7 +71,7 @@ function App() {
   // Image carousel effect
   useEffect(() => {
     const imageTimer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 5);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 6);
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(imageTimer);
@@ -280,6 +280,21 @@ function App() {
                   left: 0,
                 }}
               >
+                <img
+                  src='/Yellow-Bolts.png'
+                  alt='Yellow Bolts'
+                  className='h-full w-full object-contain'
+                />
+              </div>
+              <div
+                className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
+                style={{
+                  opacity: currentImageIndex === 2 ? 1 : 0,
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                }}
+              >
                 <div className='flex flex-row gap-4 justify-center items-end'>
                   <img
                     src='/WellEasy-Tablet.png'
@@ -296,7 +311,7 @@ function App() {
               <div
                 className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
-                  opacity: currentImageIndex === 2 ? 1 : 0,
+                  opacity: currentImageIndex === 3 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
@@ -318,7 +333,7 @@ function App() {
               <div
                 className='w-full h-full flex items-center justify-center transition-opacity duration-1000'
                 style={{
-                  opacity: currentImageIndex === 3 ? 1 : 0,
+                  opacity: currentImageIndex === 4 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
@@ -340,7 +355,7 @@ function App() {
               <div
                 className='w-full h-full transition-opacity duration-1000'
                 style={{
-                  opacity: currentImageIndex === 4 ? 1 : 0,
+                  opacity: currentImageIndex === 5 ? 1 : 0,
                   position: 'absolute',
                   top: 0,
                   left: 0,
@@ -493,6 +508,30 @@ function App() {
             {/* Project 2 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
+                <img
+                  src='/Yellow-Bolts.png'
+                  alt='Yellow Bolts'
+                  className='w-full object-contain'
+                />
+              </div>
+              <div className='flex flex-row gap-2 justify-between'>
+                <p className='text-sm font-hanken text-gray-900 mb-2 text-left'>
+                  2. {t.yellowBoltsLabel}
+                </p>
+                <div className='flex flex-col gap-2 w-[60%]'>
+                  <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
+                    {t.yellowBoltsTitle}
+                  </h4>
+                  <p className='text-sm text-gray-800 leading-relaxed'>
+                    {t.yellowBoltsDesc}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className='py-6'>
+              <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
                   href='/welleasy'
                   className='w-full mb-1 flex flex-row gap-4 justify-center items-end cursor-pointer block'
@@ -514,7 +553,7 @@ function App() {
                   href='/welleasy'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  2. {t.welleasyLabel}
+                  3. {t.welleasyLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -527,7 +566,7 @@ function App() {
               </div>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <div className='py-6'>
               <div className='w-full h-full overflow-hidden'>
                 <a
@@ -551,7 +590,7 @@ function App() {
                   href='/tbd'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  3. {t.tbdLabel}
+                  4. {t.tbdLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -564,7 +603,7 @@ function App() {
               </div>
             </div>
 
-            {/* Project 4 */}
+            {/* Project 5 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <a
@@ -588,7 +627,7 @@ function App() {
                   href='/SI'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  4. {t.appleNewsLabel}
+                  5. {t.appleNewsLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -601,7 +640,7 @@ function App() {
               </div>
             </div>
 
-            {/* Project 5 */}
+            {/* Project 6 */}
             <div className='py-6'>
               <a
                 className='w-full h-full mb-4 overflow-hidden block'
@@ -626,7 +665,7 @@ function App() {
                   href='/gumroad'
                   className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
                 >
-                  5. {t.gumroadLabel}
+                  6. {t.gumroadLabel}
                 </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
@@ -705,6 +744,26 @@ function App() {
             {/* Project 2 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
+                <img
+                  src='/Yellow-Bolts.png'
+                  alt='Yellow Bolts'
+                  className='w-full object-contain'
+                />
+              </div>
+              <p className='text-sm font-hanken text-gray-600 mb-2'>
+                2. {t.yellowBoltsLabel}
+              </p>
+              <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
+                {t.yellowBoltsTitle}
+              </h4>
+              <p className='text-sm text-gray-600 leading-relaxed'>
+                {t.yellowBoltsDesc}
+              </p>
+            </div>
+
+            {/* Project 3 */}
+            <div className='py-8'>
+              <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
                   className='w-full mb-1 flex flex-row gap-4 justify-center items-end'
                   onClick={() => setCurrentCaseStudy('welleasy')}
@@ -725,7 +784,7 @@ function App() {
                 onClick={() => setCurrentCaseStudy('welleasy')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                2. {t.welleasyTitle}
+                3. {t.welleasyTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.welleasyTitle}
@@ -735,7 +794,7 @@ function App() {
               </p>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
@@ -758,7 +817,7 @@ function App() {
                 onClick={() => setCurrentCaseStudy('TBD')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                3. {t.tbdTitle}
+                4. {t.tbdTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.tbdTitle}
@@ -768,7 +827,7 @@ function App() {
               </p>
             </div>
 
-            {/* Project 4 */}
+            {/* Project 5 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <div
@@ -791,7 +850,7 @@ function App() {
                 onClick={() => setCurrentCaseStudy('AppleNews')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                4. {t.appleNewsTitle}
+                5. {t.appleNewsTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.appleNewsTitle}
@@ -801,7 +860,7 @@ function App() {
               </p>
             </div>
 
-            {/* Project 5 */}
+            {/* Project 6 */}
             <div className='py-8 mb-0'>
               <div className='w-full h-full mb-4 overflow-hidden'>
                 <video
@@ -823,7 +882,7 @@ function App() {
                 onClick={() => setCurrentCaseStudy('Gumroad')}
                 className='text-sm font-hanken text-gray-600 mb-2'
               >
-                5. {t.gumroadTitle}
+                6. {t.gumroadTitle}
               </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.gumroadTitle}
