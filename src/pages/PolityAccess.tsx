@@ -43,30 +43,24 @@ const PolityAccess = () => {
   };
 
   return (
-    <div className='w-full h-screen overflow-y-auto bg-white px-3 py-4 pb-20'>
-      <div className='mb-6 max-w-[1200px] mx-auto'>
-        <button
-          onClick={() => {
-            window.location.href = '/polity';
-          }}
-          className='text-sm font-hanken text-gray-500 mb-4 hover:text-gray-800 cursor-pointer'
-        >
-          ← Back
-        </button>
+    <div className='relative w-full h-screen overflow-y-auto bg-white px-3 py-4'>
+      <button
+        onClick={() => {
+          window.location.href = '/polity';
+        }}
+        className='text-sm font-hanken text-gray-500 hover:text-gray-800 cursor-pointer'
+      >
+        ← Back
+      </button>
+
+      <div className='flex min-h-[calc(100vh-4.5rem)] flex-col items-center justify-center text-center'>
         <p className='text-sm font-hanken text-gray-900'>{t.polityLabel}</p>
-        <div
-          style={{
-            borderTop: '1px solid #d9d9d9',
-            marginTop: '25px',
-            width: '100%',
-            marginBottom: '15px',
-          }}
-        />
+        <div className='my-4 w-full max-w-sm border-t border-[#d9d9d9]' />
 
         <h3 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
           {t.viewSite}
         </h3>
-        <p className='text-sm text-gray-600 leading-relaxed mb-6'>
+        <p className='text-sm text-gray-600 leading-relaxed mb-6 max-w-sm'>
           {t.polityAccessPrompt}
         </p>
 
@@ -80,7 +74,7 @@ const PolityAccess = () => {
             {url}
           </a>
         ) : (
-          <form onSubmit={onSubmit} className='max-w-sm'>
+          <form onSubmit={onSubmit} className='w-full max-w-sm'>
             <label
               htmlFor='polity-password'
               className='text-sm font-hanken text-gray-800 mb-2 block'
@@ -93,7 +87,7 @@ const PolityAccess = () => {
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               autoComplete='current-password'
-              className='w-full border border-gray-300 rounded px-3 py-2 text-sm font-hanken text-gray-800 mb-3'
+              className='w-full border border-gray-300 rounded px-3 py-2 text-sm font-hanken text-gray-800 text-center mb-3'
             />
             <button
               type='submit'
