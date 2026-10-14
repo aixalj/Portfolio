@@ -1039,7 +1039,10 @@ function App() {
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsWebflow}
                     </p>
-                    <p className='text-sm hidden font-hanken font-medium text-gray-800 mb-2'>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsWordpress}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsAdobeCreativeSuite}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
@@ -1049,10 +1052,19 @@ function App() {
                       {t.skillsHtmlCss}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsCss3}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsJavascript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsBootstrapTailwind}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsPhp}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsCms}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsReactTypescript}
@@ -1062,6 +1074,9 @@ function App() {
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsGithubVercel}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsNetlify}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
                       {t.skillsFluentSpanish}
@@ -1180,16 +1195,31 @@ function App() {
                       {t.skillsWebflow}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsWordpress}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsAdobeCreativeSuite}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsAppleNewsDesign}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsHtmlCss}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsCss3}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsJavascript}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsBootstrapTailwind}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsPhp}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsCms}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsReactTypescript}
@@ -1199,6 +1229,9 @@ function App() {
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
                       {t.skillsGithubVercel}
+                    </p>
+                    <p className='text-sm font-hanken font-medium text-gray-800 mb-2'>
+                      {t.skillsNetlify}
                     </p>
                     <p className='text-sm font-hanken font-medium text-gray-800 mb-0'>
                       {t.skillsFluentSpanish}
