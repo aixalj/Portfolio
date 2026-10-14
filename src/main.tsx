@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.tsx';
 import Polity from './pages/Polity.tsx';
+import PolityAccess from './pages/PolityAccess.tsx';
 import WellEasy from './pages/WellEasy.tsx';
 import SI from './pages/AppleNews.tsx';
 import TBD from './pages/TBD/Block.tsx';
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/polity' element={<Polity />} />
+        <Route path='/polity-access' element={<PolityAccess />} />
         <Route path='/yellow-bolts' element={<YellowBolts />} />
         <Route path='/welleasy' element={<WellEasy />} />
         <Route path='/si' element={<SI />} />

@@ -89,13 +89,19 @@ const AddressesTable = ({
         </div>
 
         <div className='flex justify-between'>
-          <div className='flex flex-col'>
+          <div className='flex flex-col mb-2'>
             <h3 className='text-sm font-hanken text-gray-600 mb-2'>
               {t.polityLabel}
             </h3>
-            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-4 italic'>
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
               {t.polityTitle}
             </h4>
+            <a
+              href='/polity-access'
+              className='text-sm text-gray-500 underline hover:text-gray-700'
+            >
+              {t.viewSite}
+            </a>
           </div>
           <div className='flex justify-center mb-4'>
             <img
