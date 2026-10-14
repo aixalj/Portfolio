@@ -113,13 +113,16 @@ const YellowBolts = () => {
             />
           </div>
 
-          <div className='mb-10 max-sm:mb-5'>
-            <h5 className='text-sm font-hanken font-medium text-gray-800'>
-              {t.process}
-            </h5>
-            <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
-              {t.yellowBoltsProcess}
-            </p>
+          <div className='flex justify-between items-start'>
+            <div className='w-[63%] max-lg:w-[0%]' />
+            <div className='w-[50%] max-lg:w-full mb-10 max-sm:mb-5'>
+              <h5 className='text-sm font-hanken font-medium text-gray-800'>
+                {t.process}
+              </h5>
+              <p className='text-sm text-gray-600 leading-relaxed max-lg:w-full'>
+                {t.yellowBoltsProcess}
+              </p>
+            </div>
           </div>
 
           <div className='w-full min-w-0 mb-6 grid grid-cols-3 gap-4 max-sm:grid-cols-1'>
