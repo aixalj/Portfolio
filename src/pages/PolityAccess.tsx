@@ -8,7 +8,6 @@ const PolityAccess = () => {
       : 'en';
   const t = translations[language];
   const [password, setPassword] = useState('');
-  const [url, setUrl] = useState('');
   const [error, setError] = useState('');
   const [pending, setPending] = useState(false);
 
@@ -26,7 +25,7 @@ const PolityAccess = () => {
       const data = (await response.json()) as { ok?: boolean; url?: string };
 
       if (response.ok && data.url) {
-        setUrl(data.url);
+        window.location.href = data.url;
         return;
       }
 
@@ -64,43 +63,32 @@ const PolityAccess = () => {
           {t.polityAccessPrompt}
         </p>
 
-        {url ? (
-          <a
-            href={url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-sm text-gray-500 underline hover:text-gray-700'
+        <form onSubmit={onSubmit} className='w-full max-w-sm'>
+          <label
+            htmlFor='polity-password'
+            className='text-sm font-hanken text-gray-800 mb-2 block'
           >
-            {url}
-          </a>
-        ) : (
-          <form onSubmit={onSubmit} className='w-full max-w-sm'>
-            <label
-              htmlFor='polity-password'
-              className='text-sm font-hanken text-gray-800 mb-2 block'
-            >
-              {t.polityAccessPassword}
-            </label>
-            <input
-              id='polity-password'
-              type='password'
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              autoComplete='current-password'
-              className='w-full border border-gray-300 rounded px-3 py-2 text-sm font-hanken text-gray-800 text-center mb-3'
-            />
-            <button
-              type='submit'
-              disabled={pending}
-              className='text-sm font-hanken text-gray-600 underline hover:text-gray-800 cursor-pointer disabled:opacity-50'
-            >
-              {t.polityAccessSubmit}
-            </button>
-            {error ? (
-              <p className='text-sm text-gray-800 mt-3'>{error}</p>
-            ) : null}
-          </form>
-        )}
+            {t.polityAccessPassword}
+          </label>
+          <input
+            id='polity-password'
+            type='password'
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            autoComplete='current-password'
+            className='w-full border border-gray-300 rounded px-3 py-2 text-sm font-hanken text-gray-800 text-center mb-3'
+          />
+          <button
+            type='submit'
+            disabled={pending}
+            className='text-sm font-hanken text-gray-600 underline hover:text-gray-800 cursor-pointer disabled:opacity-50'
+          >
+            {t.polityAccessSubmit}
+          </button>
+          {error ? (
+            <p className='text-sm text-gray-800 mt-3'>{error}</p>
+          ) : null}
+        </form>
       </div>
     </div>
   );
