@@ -39,13 +39,30 @@ const YellowBolts = () => {
           />
         </div>
 
-        <div className='flex flex-col mb-2'>
-          <h3 className='text-sm font-hanken text-gray-600 mb-2'>
-            {t.yellowBoltsLabel}
-          </h3>
-          <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
-            {t.yellowBoltsTitle}
-          </h4>
+        <div className='flex justify-between items-start gap-4'>
+          <div className='flex flex-col mb-2'>
+            <h3 className='text-sm font-hanken text-gray-600 mb-2'>
+              {t.yellowBoltsLabel}
+            </h3>
+            <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
+              {t.yellowBoltsTitle}
+            </h4>
+            <a
+              href='https://yellowbolts.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-sm text-gray-500 underline hover:text-gray-700'
+            >
+              https://yellowbolts.com/
+            </a>
+          </div>
+          <div className='flex justify-center mb-4 shrink-0'>
+            <img
+              src='/Yellow-Bolts-Logo.png'
+              alt='Yellow Bolts Logo'
+              className='h-12 object-contain max-sm:h-10'
+            />
+          </div>
         </div>
         <div>
           <h5 className='text-sm font-hanken font-medium text-gray-800 mb-2'>
