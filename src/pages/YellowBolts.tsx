@@ -83,16 +83,16 @@ const YellowBolts = () => {
             />
           </div>
 
-          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
+          <div className='w-full min-w-0 mb-6 grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
             <img
               src='/Yellow-Bolts-What-We-Do.png'
               alt='Yellow Bolts what we do'
-              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+              className='w-full min-w-0 max-w-full h-auto object-contain border border-gray-200 rounded'
             />
             <img
               src='/Yellow-Bolts-What-We-Cover.png'
               alt='Yellow Bolts what we cover'
-              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+              className='w-full min-w-0 max-w-full h-auto object-contain border border-gray-200 rounded'
             />
           </div>
 
@@ -105,7 +105,7 @@ const YellowBolts = () => {
             </p>
           </div>
 
-          <div className='w-full mb-6 grid grid-cols-3 gap-4 max-sm:grid-cols-1'>
+          <div className='w-full min-w-0 mb-6 grid grid-cols-3 gap-4 max-sm:grid-cols-1'>
             <img
               src='/Yellow-Bolts-How-It-Works.png'
               alt='Yellow Bolts how it works'
@@ -123,16 +123,16 @@ const YellowBolts = () => {
             />
           </div>
 
-          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
+          <div className='w-full min-w-0 mb-6 grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
             <img
               src='/Yellow-Bolts-How-We-Work.png'
               alt='Yellow Bolts how we work'
-              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+              className='w-full min-w-0 max-w-full h-auto object-contain border border-gray-200 rounded'
             />
             <img
               src='/Yellow-Bolts-Regulatory.png'
               alt='Yellow Bolts regulatory information'
-              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+              className='w-full min-w-0 max-w-full h-auto object-contain border border-gray-200 rounded'
             />
           </div>
 
