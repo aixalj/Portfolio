@@ -75,6 +75,27 @@ const YellowBolts = () => {
             </p>
           </div>
 
+          <div className='w-full mb-6'>
+            <img
+              src='/Yellow-Bolts-Renovation.png'
+              alt='Yellow Bolts renovation cover page'
+              className='w-full h-auto object-contain border border-gray-200 rounded'
+            />
+          </div>
+
+          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
+            <img
+              src='/Yellow-Bolts-What-We-Do.png'
+              alt='Yellow Bolts what we do'
+              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+            />
+            <img
+              src='/Yellow-Bolts-What-We-Cover.png'
+              alt='Yellow Bolts what we cover'
+              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+            />
+          </div>
+
           <div className='mb-10 max-sm:mb-5'>
             <h5 className='text-sm font-hanken font-medium text-gray-800'>
               {t.process}
@@ -82,6 +103,37 @@ const YellowBolts = () => {
             <p className='text-sm text-gray-600 leading-relaxed w-[60%] max-lg:w-full'>
               {t.yellowBoltsProcess}
             </p>
+          </div>
+
+          <div className='w-full mb-6 grid grid-cols-3 gap-4 max-sm:grid-cols-1'>
+            <img
+              src='/Yellow-Bolts-How-It-Works.png'
+              alt='Yellow Bolts how it works'
+              className='w-full h-auto object-contain border border-gray-200 rounded'
+            />
+            <img
+              src='/Yellow-Bolts-Covered.png'
+              alt='Yellow Bolts covered in three steps'
+              className='w-full h-auto object-contain border border-gray-200 rounded'
+            />
+            <img
+              src='/Yellow-Bolts-Cover-Types.png'
+              alt='Yellow Bolts cover types'
+              className='w-full h-auto object-contain border border-gray-200 rounded'
+            />
+          </div>
+
+          <div className='w-full mb-6 flex flex-row gap-4 max-sm:flex-col'>
+            <img
+              src='/Yellow-Bolts-How-We-Work.png'
+              alt='Yellow Bolts how we work'
+              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+            />
+            <img
+              src='/Yellow-Bolts-Regulatory.png'
+              alt='Yellow Bolts regulatory information'
+              className='flex-1 w-full h-auto object-contain border border-gray-200 rounded'
+            />
           </div>
 
           <div>
