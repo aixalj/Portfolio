@@ -33,7 +33,7 @@ const YellowBolts = () => {
       <div className='max-w-[1200px] mx-auto'>
         <div className='w-full mb-6'>
           <img
-            src='/Yellow-Bolts.png'
+            src='/Yellow-Bolts.png?v=2'
             alt='Yellow Bolts'
             className='w-full h-auto object-contain'
           />

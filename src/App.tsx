@@ -282,7 +282,7 @@ function App() {
                 }}
               >
                 <img
-                  src='/Yellow-Bolts.png'
+                  src='/Yellow-Bolts.png?v=2'
                   alt='Yellow Bolts'
                   className='h-full w-full object-contain'
                 />
@@ -514,7 +514,7 @@ function App() {
                   className='w-full mb-1 block cursor-pointer'
                 >
                   <img
-                    src='/Yellow-Bolts.png'
+                    src='/Yellow-Bolts.png?v=2'
                     alt='Yellow Bolts'
                     className='w-full h-auto object-contain'
                   />
@@ -758,7 +758,7 @@ function App() {
                   onClick={() => setCurrentCaseStudy('yellowbolts')}
                 >
                   <img
-                    src='/Yellow-Bolts.png'
+                    src='/Yellow-Bolts.png?v=2'
                     alt='Yellow Bolts'
                     className='w-full h-auto object-contain'
                   />
