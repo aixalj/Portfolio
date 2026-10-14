@@ -322,7 +322,7 @@ const AddressesTable = ({
               ← PREVIOUS
             </button>
             <button
-              onClick={() => (window.location.href = '/welleasy')}
+              onClick={() => (window.location.href = '/yellow-bolts')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →
@@ -340,7 +340,7 @@ const AddressesTable = ({
               ← PREVIOUS
             </button>
             <button
-              onClick={() => (window.location.href = '/welleasy')}
+              onClick={() => (window.location.href = '/yellow-bolts')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               NEXT →

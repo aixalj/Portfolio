@@ -7,6 +7,7 @@ import WellEasy from './pages/WellEasy.tsx';
 import SI from './pages/AppleNews.tsx';
 import TBD from './pages/TBD/Block.tsx';
 import Gumroad from './pages/Gumroad.tsx';
+import YellowBolts from './pages/YellowBolts.tsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/polity' element={<Polity />} />
+        <Route path='/yellow-bolts' element={<YellowBolts />} />
         <Route path='/welleasy' element={<WellEasy />} />
         <Route path='/si' element={<SI />} />
         <Route path='/tbd' element={<TBD />} />

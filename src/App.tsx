@@ -5,6 +5,7 @@ import WellEasy from './pages/WellEasy';
 import AppleNews from './pages/AppleNews';
 import TBD from './pages/TBD/Block';
 import Gumroad from './pages/Gumroad';
+import YellowBolts from './pages/YellowBolts';
 
 function App() {
   const rightPaneRef = useRef<HTMLDivElement>(null);
@@ -508,16 +509,24 @@ function App() {
             {/* Project 2 */}
             <div className='py-6'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <img
-                  src='/Yellow-Bolts.png'
-                  alt='Yellow Bolts'
-                  className='w-full object-contain'
-                />
+                <a
+                  href='/yellow-bolts'
+                  className='w-full mb-1 block cursor-pointer'
+                >
+                  <img
+                    src='/Yellow-Bolts.png'
+                    alt='Yellow Bolts'
+                    className='w-full h-auto object-contain'
+                  />
+                </a>
               </div>
               <div className='flex flex-row gap-2 justify-between'>
-                <p className='text-sm font-hanken text-gray-900 mb-2 text-left'>
+                <a
+                  href='/yellow-bolts'
+                  className='text-sm font-hanken text-gray-900 mb-2 hover:text-gray-700 text-left block'
+                >
                   2. {t.yellowBoltsLabel}
-                </p>
+                </a>
                 <div className='flex flex-col gap-2 w-[60%]'>
                   <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                     {t.yellowBoltsTitle}
@@ -744,15 +753,23 @@ function App() {
             {/* Project 2 */}
             <div className='py-8'>
               <div className='w-full h-full mb-4 overflow-hidden'>
-                <img
-                  src='/Yellow-Bolts.png'
-                  alt='Yellow Bolts'
-                  className='w-full object-contain'
-                />
+                <div
+                  className='w-full mb-1 cursor-pointer'
+                  onClick={() => setCurrentCaseStudy('yellowbolts')}
+                >
+                  <img
+                    src='/Yellow-Bolts.png'
+                    alt='Yellow Bolts'
+                    className='w-full h-auto object-contain'
+                  />
+                </div>
               </div>
-              <p className='text-sm font-hanken text-gray-600 mb-2'>
+              <button
+                onClick={() => setCurrentCaseStudy('yellowbolts')}
+                className='text-sm font-hanken text-gray-600 mb-2 hover:text-gray-800 text-left'
+              >
                 2. {t.yellowBoltsLabel}
-              </p>
+              </button>
               <h4 className='text-lg font-hanken font-medium text-gray-800 mb-2 italic'>
                 {t.yellowBoltsTitle}
               </h4>
@@ -1210,6 +1227,12 @@ function App() {
       {currentCaseStudy === 'polity' && (
         <div className='lg:hidden'>
           <Polity />
+        </div>
+      )}
+
+      {currentCaseStudy === 'yellowbolts' && (
+        <div className='lg:hidden'>
+          <YellowBolts />
         </div>
       )}
 

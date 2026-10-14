@@ -295,7 +295,7 @@ const WellEasy = () => {
         <div className='hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 z-40'>
           <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
             <button
-              onClick={() => (window.location.href = '/polity')}
+              onClick={() => (window.location.href = '/yellow-bolts')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
@@ -313,7 +313,7 @@ const WellEasy = () => {
         <div className='lg:hidden bg-white px-2 py-4 mt-4 mb-20'>
           <div className='flex justify-between items-center'>
             <button
-              onClick={() => (window.location.href = '/polity')}
+              onClick={() => (window.location.href = '/yellow-bolts')}
               className='text-sm font-hanken text-gray-600 hover:text-gray-800 underline cursor-pointer'
             >
               ← PREVIOUS
