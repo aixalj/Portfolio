@@ -53,7 +53,7 @@ const YellowBolts = () => {
               rel='noopener noreferrer'
               className='text-sm text-gray-500 underline hover:text-gray-700'
             >
-              https://yellowbolts.com/
+              {t.viewSite}
             </a>
           </div>
           <div className='flex justify-center mb-4 shrink-0'>
