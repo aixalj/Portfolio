@@ -2,7 +2,7 @@ export type Language = 'en' | 'es';
 
 export const translations = {
   en: {
-    title: 'Designer & Developer - websites and digital products',
+    title: 'Designer & Developer -\nwebsites and digital products',
     portfolio: 'Portfolio',
     name: 'Aixa Jemmott-Musin',
     bio: 'I design things and then build them. Most of my work starts in Figma and ends in production code I\'ve written myself, so the gap between what\'s designed and what ships is as small as I can make it. I came to digital through textile design at Central Saint Martins, and I still approach interfaces the same way: material first, detail always. Today I work across product design and front-end engineering with startups, agencies and independent clients.',
@@ -138,7 +138,7 @@ export const translations = {
     copyright: '© 2025 Aixa Jemmott-Musin',
   },
   es: {
-    title: 'Diseñadora y Desarrolladora - sitios web y productos digitales',
+    title: 'Diseñadora y Desarrolladora -\nsitios web y productos digitales',
     portfolio: 'Portafolio',
     name: 'Aixa Jemmott-Musin',
     bio: 'Diseño cosas y luego las construyo. La mayor parte de mi trabajo empieza en Figma y termina en código de producción que he escrito yo misma, así que la distancia entre lo diseñado y lo que se publica es la menor que puedo lograr. Llegué al mundo digital a través del diseño textil en Central Saint Martins, y sigo abordando las interfaces de la misma manera: primero el material, siempre el detalle. Hoy trabajo entre el diseño de producto y la ingeniería front-end con startups, agencias y clientes independientes.',

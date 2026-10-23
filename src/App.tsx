@@ -152,7 +152,7 @@ function App() {
       >
         {/* Header */}
         <div className='mb-6'>
-          <p className='text-sm font-hanken text-gray-900 mb-2 whitespace-nowrap'>
+          <p className='text-sm font-hanken text-gray-900 mb-2 whitespace-pre-line'>
             {t.title}
           </p>
           <div
@@ -235,7 +235,7 @@ function App() {
       {activePage === 'home' && (
         <div className='lg:hidden w-full h-screen overflow-y-auto bg-white px-3 py-8 pb-20'>
           <div className='mb-8'>
-            <p className='text-sm font-hanken text-gray-900 mb-2'>
+            <p className='text-sm font-hanken text-gray-900 mb-2 whitespace-pre-line'>
               {t.title}
             </p>
             <div
