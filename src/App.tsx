@@ -192,7 +192,13 @@ function App() {
           
 
           <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
-            {t.bio}
+            {t.bio} {t.bioAvailability}{' '}
+            <a
+              href={`mailto:${t.email}`}
+              className='underline'
+            >
+              {t.email}
+            </a>
           </p>
         </div>
 
@@ -404,7 +410,13 @@ function App() {
               </a>
             </div>
             <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
-              {t.bio}
+              {t.bio} {t.bioAvailability}{' '}
+              <a
+                href={`mailto:${t.email}`}
+                className='underline'
+              >
+                {t.email}
+              </a>
             </p>
           </div>
 
