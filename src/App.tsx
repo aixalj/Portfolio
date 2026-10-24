@@ -192,27 +192,19 @@ function App() {
           
 
           <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
-            {t.bio} {t.bioAvailability}{' '}
-            <a
-              href={`mailto:${t.email}`}
-              className='underline'
-            >
+            {t.bio}
+          </p>
+          <p className='text-sm text-gray-900 leading-relaxed mb-4 w-[100%]'>
+            {t.bioAvailability}{' '}
+            <a href={`mailto:${t.email}`} className='underline'>
               {t.email}
             </a>
           </p>
         </div>
 
-        {/* Contact Links */}
         <div className=''>
           <div />
           <div className='space-y-2'>
-            <a
-              href='mailto:aixa.jemmottmusin@gmail.com'
-              className='block text-sm text-gray-800 underline'
-              target='_blank'
-            >
-              {t.contact}
-            </a>
             <button
               onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
               className='block text-sm text-gray-800 underline cursor-pointer hover:text-gray-600'
@@ -410,11 +402,11 @@ function App() {
               </a>
             </div>
             <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
-              {t.bio} {t.bioAvailability}{' '}
-              <a
-                href={`mailto:${t.email}`}
-                className='underline'
-              >
+              {t.bio}
+            </p>
+            <p className='text-sm text-gray-800 leading-relaxed mb-4 w-full'>
+              {t.bioAvailability}{' '}
+              <a href={`mailto:${t.email}`} className='underline'>
                 {t.email}
               </a>
             </p>
