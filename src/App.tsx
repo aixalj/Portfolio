@@ -47,13 +47,6 @@ function App() {
 
   const t = translations[language];
 
-  const handleLeftWheel = (event: React.WheelEvent<HTMLDivElement>) => {
-    event.preventDefault();
-    if (rightPaneRef.current) {
-      rightPaneRef.current.scrollTop += event.deltaY;
-    }
-  };
-
   const handleCvWheel = (event: React.WheelEvent<HTMLDivElement>) => {
     event.preventDefault();
     if (cvPaneRef.current) {
@@ -137,7 +130,7 @@ function App() {
     <div className='min-h-screen bg-white flex flex-col lg:flex-row'>
       {/* Left Side - Static - Desktop Only */}
       <div
-        className='hidden lg:flex w-[24%] fixed left-0 top-0 bg-white flex-col'
+        className='hidden lg:flex w-[24%] fixed left-0 top-0 bg-white flex-col overflow-y-auto'
         style={{
           height: 'calc(100vh - 0px)',
           borderRight: '1px solid #d9d9d9',
@@ -148,7 +141,6 @@ function App() {
           borderImage:
             'linear-gradient(to bottom, transparent 15px, #d9d9d9 15px, #d9d9d9 calc(100% - 15px), transparent calc(100% - 20px)) 1',
         }}
-        onWheel={handleLeftWheel}
       >
         {/* Header */}
         <div className='mb-6'>
