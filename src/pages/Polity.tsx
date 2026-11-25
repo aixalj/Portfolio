@@ -97,7 +97,9 @@ const AddressesTable = ({
               {t.polityTitle}
             </h4>
             <a
-              href='/polity-access'
+              href='https://polity-demo.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
               className='text-sm text-gray-500 underline hover:text-gray-700'
             >
               {t.viewSite}
